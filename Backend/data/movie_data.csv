@@ -1,0 +1,401 @@
+id,title,genre_ids,language,release_date,backdrop_path,poster_path
+0,Mercy,"[878, 28, 53]",en,2026-01-20,/7HKpc11uQfxnw0Y8tRUYn1fsKqE.jpg,/pyok1kZJCfyuFapYXzHcy7BLlQa.jpg
+1,28 Years Later: The Bone Temple,"[27, 53, 878]",en,2026-01-14,/hHDNOlATHhre4eZ7aYz5cdyJLik.jpg,/kK1BGkG3KAvWB0WMV1DfOx9yTMZ.jpg
+2,The Orphans,[28],fr,2025-08-20,/xzY15HIBMR1MPo9Me8OsaZShF9T.jpg,/hP7mjZr2SVfjAorlRHTdV1XZmHY.jpg
+3,A Woman Scorned,[28],en,2025-06-09,/uzZ7LUx4Bb3nZXjvBx5PiqTE7rk.jpg,/dlOSBiNULMPzKIze84LDjvEN9z1.jpg
+4,Deathstalker,"[14, 28, 12]",en,2025-10-10,/cugd16e3WbCG3Zogb8N7lwUnVXH.jpg,/nEI3DnzQC1afAjJOAizx6UX27pL.jpg
+5,Greenland 2: Migration,"[12, 53, 878]",en,2026-01-07,/u9jE0R1nvkmdWu3bt7Op8joPywa.jpg,/z2tqCJLsw6uEJ8nJV8BsQXGa3dr.jpg
+6,Your Heart Will Be Broken,"[10749, 18]",ru,2026-03-26,,/iGpMm603GUKH2SiXB2S5m4sZ17t.jpg
+7,Space/Time,"[878, 28, 53]",en,2025-05-01,/w1Z1I9PqTK5UjG6RVAFXLCjp1Sw.jpg,/uje1ecKMnNpZp0at5TxlvVgVXqI.jpg
+8,The Shadow's Edge,"[28, 80, 18, 53]",zh,2025-08-16,/zXINNssll2zsPGqd7F7Llrw7Uql.jpg,/e0RU6KpdnrqFxDKlI3NOqN8nHL6.jpg
+9,Zootopia 2,"[16, 35, 12, 10751, 9648]",en,2025-11-26,/7nfpkR9XsQ1lBNCXSSHxGV7Dkxe.jpg,/oJ7g2CifqpStmoYQyaLQgEU32qO.jpg
+10,Cuerno Azulado,[28],es,2025-09-10,/4IEjHlV6ciUPopHnEs5AfBNJ6XS.jpg,/q0OveDlsh5BNq6ifZqNWKtLKiwb.jpg
+11,Predator: Badlands,"[28, 878, 12]",en,2025-11-05,/82lM4GJ9uuNvNDOEpxFy77uv4Ak.jpg,/erTRAi241eYF4K8KoGGOI8kFPox.jpg
+12,The Housemaid,"[18, 9648, 53]",en,2025-12-18,/tNONILTe9OJz574KZWaLze4v6RC.jpg,/cWsBscZzwu5brg9YjNkGewRUvJX.jpg
+13,The Wrecking Crew,"[28, 35, 80, 9648]",en,2026-01-28,/cz4vLJrmaV1zJlRYbxqtvLzeLWB.jpg,/gbVwHl4YPSq6BcC92TQpe7qUTh6.jpg
+14,Avatar: Fire and Ash,"[878, 12, 14]",en,2025-12-17,/sdZSjtGUTSN8B3al5o0f2WoQfQQ.jpg,/bRBeSHfGHwkEpImlhxPmOcUsaeg.jpg
+15,"""Wuthering Heights""","[10749, 18]",en,2026-02-11,/vSQSYd2zZTqc0zmHImwWEGGluMI.jpg,/ywRO5dyE8RyyXJd6cvd69jLZeic.jpg
+16,War of the Worlds,"[878, 53]",en,2025-07-29,/iZLqwEwUViJdSkGVjePGhxYzbDb.jpg,/yvirUYrva23IudARHn3mMGVxWqM.jpg
+17,Gates of Flesh,"[27, 53, 28]",en,2025-04-08,/5arE7ysejlE2byGyakuUrR5TmUt.jpg,/tsu0fapttpwweWhx2GvYFtSCFhi.jpg
+18,Kraken,"[27, 28, 53]",no,2026-02-06,/xcBlMEvzuaHoWANKYn5PGvcW4OC.jpg,/jVsflOu9WpMqUJ3WwVX2mITi86S.jpg
+19,Firebreak,"[53, 18]",es,2026-02-19,/thgemkoLauZxcqe6KX8wxqEc70z.jpg,/knh3c8LzL9fMhjc5SZPAOotXyiy.jpg
+20,Kraken,"[27, 28, 53]",no,2026-02-06,/xcBlMEvzuaHoWANKYn5PGvcW4OC.jpg,/jVsflOu9WpMqUJ3WwVX2mITi86S.jpg
+21,GOAT,"[16, 35, 10751, 28]",en,2026-02-11,/1qwhYqg7YEZajh3Q4biqbuQoDq8.jpg,/wfuqMlaExcoYiUEvKfVpUTt1v4u.jpg
+22,Demon Slayer: Kimetsu no Yaiba Infinity Castle,"[16, 28, 14]",ja,2025-07-18,/lNYympQM5O6QSInusbyG9eJDIe4.jpg,/fWVSwgjpT2D78VUh6X8UBd2rorW.jpg
+23,Marty Supreme,[18],en,2025-12-19,/qKWDHofjMHPSEOTLaixkC9ZmjTT.jpg,/lYWEXbQgRTR4ZQleSXAgRbxAjvq.jpg
+24,Oscar Shaw,"[28, 80, 53]",en,2026-01-09,/6D6M5z4reppUxo2cnBEKI02Csp1.jpg,/tsE3nySukwrfUjouz8vzvKTcXNC.jpg
+25,Love Me Love Me,"[10749, 18]",en,2026-02-12,/ohUhHOqW8cM59Ay5UjqplLzJbH3.jpg,/xmoO861IKm1ycJ52mLGc3nwINKV.jpg
+26,Crime 101,"[80, 53]",en,2026-02-11,/yWZc7ZglTAecVLKHS0oROuetKce.jpg,/2HoR2x23bqKpopluoBD1FH3tBi7.jpg
+27,Misdirection,"[27, 53]",en,2026-01-13,/15sarvi4KF6WFtCQbKgcxG8iOj.jpg,/z7padnoIDHbmxPdqEHryhqlaVqc.jpg
+28,A Father's Miracle,[18],es,2025-12-25,/fIuuYkIjF9Q7W26YbIeKX5OWwiL.jpg,/heC13pt4SV7y3HF5lWNzf0u729j.jpg
+29,Help!,"[35, 10402, 12]",en,1965-07-29,/qhpib62efVnZon7yiYaV1hEb2kF.jpg,/nLvgIB3bVb8jyhls5W6B74Xt4Ei.jpg
+30,Primate,"[27, 53]",en,2026-01-01,/9uakM2woks0JV8HKIc4oatIVS88.jpg,/rKleYiEj4pFqxedTRWfujLooi84.jpg
+31,Bāhubali: The Epic,"[28, 18]",te,2025-10-29,/wCwZ4ljSsWyZyTiyk1tGQtBHTDx.jpg,/z9YIo2qscyaXYgRqIdRJtND3bw8.jpg
+32,One Mile: Chapter One,"[28, 80]",en,2026-02-20,/xBORKTaQJTq3l7EdnTTnrZnYzYa.jpg,/1GZaoYe0mQy211DgDSAxAXr30ul.jpg
+33,State of Fear,"[28, 53, 80, 18]",pt,2026-02-10,/1Xdsq7U7bvJJd2X7Jg4qNaKVkYO.jpg,/3Eaqedg8MAlnP51GYY8MCSIdTnV.jpg
+34,Polar Opposites,"[10770, 35, 10749]",en,2025-01-11,/ouvxGRtKkR6VkFzvmz4da8Ppa9R.jpg,/155X36JZ1KLoXjHfF4DNXV8Yt57.jpg
+35,The Rip,"[28, 53, 80]",en,2026-01-13,/3F2EXWF1thX0BdrVaKvnm6mAhqh.jpg,/4wsYWH73Hb1B6noGIFaRQSAkuXj.jpg
+36,Hamnet,"[18, 10749, 36]",en,2025-11-26,/73BClq9FOcrWrutnpiqhCNEWEwJ.jpg,/vbeyOZm2bvBXcbgPD3v6o94epPX.jpg
+37,Anaconda,"[12, 35, 27, 28]",en,2025-12-24,/swxhEJsAWms6X1fDZ4HdbvYBSf9.jpg,/qxMv3HwAB3XPuwNLMhVRg795Ktp.jpg
+38,Night Patrol,"[27, 9648]",en,2026-01-16,/vHvVt2Lovn4G6of9u3pHEQE2CxI.jpg,/rNqLzACU9ez2ehDalTFDPjZiC4G.jpg
+39,Witchcraft,[27],en,1964-03-01,/qGOLhOyNirLgATt9j26mgidAdQ1.jpg,/nXxxW0Gl66xqwJE9fpTLN0bPqBh.jpg
+40,The Internship,[28],en,2026-01-13,/eUERZRVjCTNdgnESlQxyaOJ2d4K.jpg,/fYqSOkix4rbDiZW0ACNnvZCpT6X.jpg
+41,Murder at the Embassy,"[9648, 53, 28]",en,2025-11-14,/gLXibzLQ4qegvjdqDC0f8yTij2P.jpg,/3DBmBItPdy0A2ol59jgHhS54Lua.jpg
+42,The Dreadful,[27],en,2026-02-20,/fAF3VGFBpItWNROmiGob60n0y5.jpg,/hGH8Ji7pG2ytHxo7ABqHM3TpzFA.jpg
+43,The Natural,[18],en,1984-05-11,/sqZGYcHJWWNHsECBl57FOCfjpFX.jpg,/fwn1gYeOkS1XHKVFdNorKSIpix8.jpg
+44,96 Minutes,"[28, 80, 10749]",zh,2025-09-05,/lAtuFCx6cYkNBmTMSNnLE0qlCLx.jpg,/gWKZ1iLhukvLoh8XY2N4tMvRQ2M.jpg
+45,High Sierra,"[80, 18, 28]",en,1941-01-23,/w2IJCEAet5u9UfH8CRHG6LSIuEP.jpg,/fkP6yy25Wja6Sn3AIlZ4F1BWsy0.jpg
+46,iPossessed,"[27, 53]",en,2025-01-15,/nLxoXMY7LnS8ymfNWusCV1wuK7V.jpg,/kmnaCRTinFPN8iplWgdGQZ52WzY.jpg
+47,The SpongeBob Movie: Search for SquarePants,"[16, 10751, 35, 12, 14]",en,2025-12-16,/gbjK8p5S1aLXWCwOoXqr9aWZvqG.jpg,/xJnOMMsFASxNiFnG7v3TNIQ3ife.jpg
+48,The Alibi,"[10749, 35, 18]",en,2006-01-12,/ums8XVCi9kWoQhTg51J0bASKltd.jpg,/7PaZLT7vfCIU6p3nG0QkIvdrTpF.jpg
+49,David,"[16, 10751, 18]",en,2025-12-14,/oN4TQ1TxchynXlFiXFBL3NHLT54.jpg,/bESlrLOrsQ9gKzaGQGHXKOyIUtX.jpg
+50,Country Doctor,[99],en,2025-07-14,/jwwcS0UF5YBjFkvqTjM2Mssiwt6.jpg,/m7XZWCBNYKUAULWSEfQKvpD8FpY.jpg
+51,Tape,[18],en,2001-11-02,/o6PsWbkPva254PkEaVAnB87wpFH.jpg,/4Flz17KOjGdGqJ2dFRhKnB7eg5.jpg
+52,I Was a Stranger,"[18, 53]",ar,2025-12-31,/atvDTVtj88v2YEjwZ20Jsr0P8nk.jpg,/RBIrEveMOIy5Kxg2WzgMnCIhaN.jpg
+53,Now You See Me: Now You Don't,"[53, 80, 9648]",en,2025-11-12,/dHSz0tSFuO2CsXJ1CApSauP9Ncl.jpg,/oD3Eey4e4Z259XLm3eD3WGcoJAh.jpg
+54,Cuerpos locos,"[35, 10751]",es,2025-10-31,/vG6DVxzey4NKE1B5X5aGglpdHNK.jpg,/t6SoxUVENVxGxJWdiGBQs4izkAx.jpg
+55,Scream 7,"[27, 9648, 80]",en,2026-02-25,/yWCZc2TcsCYbMMjvUIsczmQi2TX.jpg,/jjyuk0edLiW8vOSnlfwWCCLpbh5.jpg
+56,Dust Bunny,"[14, 28, 53]",en,2025-12-11,/AecGG1XVCmkk7fT10ko3FC0dLIP.jpg,/vobigFZFvbYPf6ElYJu07P9rH8C.jpg
+57,Maniac,"[27, 53]",en,2012-12-26,/28QWARI48SUXShKXGaLatZkeCO7.jpg,/nbDkRvhmbYnHDXkoq0sF0PLeo8j.jpg
+58,The Idolmaker,"[18, 10749, 10402]",en,1980-11-14,/awYcdQIdFs6kt9WpoYIrxZ5slTq.jpg,/sQoGkwIMsfIhfC0ukouBvWOTIpK.jpg
+59,The Avengers,"[878, 28, 12]",en,2012-04-25,/pGFQCp12a8andfPlpnmXz44IIvY.jpg,/RYMX2wcKCBAr24UyPD7xwmjaTn.jpg
+60,Eye for an Eye,[27],en,2025-07-03,/tTDfDHqGkRgBTL4Tw8mU0iwkW8T.jpg,/lpepbfVziHJLhVoxTEKs8ok00iu.jpg
+61,Avenging Force,"[28, 18, 53]",en,1986-09-12,/6WykdA4hfmceDShUir6CjTVAwoH.jpg,/nR2SSO740LzAAL43l8iDdik5flP.jpg
+62,Perfect Prey,"[53, 10770, 18]",en,1998-07-10,/bvLd6JLJRR27TXPu8apTveuTP5b.jpg,/otpeGasEHbG2yHCM14qe2qePxRq.jpg
+63,Joy Division,"[99, 10402]",en,2009-01-28,/dVRAaw1XWM6kiJQIJISSfKA0eNY.jpg,/si2Kgb6NRkIUmI5NfWQH1Y8TBVV.jpg
+64,Shelter,"[28, 80, 53]",en,2026-01-28,/6YjnTRBz704LF1uJ3ZC4wsS9T8r.jpg,/buPFnHZ3xQy6vZEHxbHgL1Pc6CR.jpg
+65,Icefall,"[28, 80, 53]",en,2025-10-16,/gQimJqYMKCkwHIo8wwYKhmnCfBr.jpg,/5Byv6nznAb2Izd0gHpODOXnuSbo.jpg
+66,Blades of the Guardians: Wind Rises in the Desert,"[28, 18, 36]",zh,2026-02-17,/cYyNJzwhaj7aC4uTlUctrfaERbf.jpg,/AbunjMKX4P1sDNlKfhYrWkIoRD9.jpg
+67,The Tank,"[10752, 28, 18]",de,2025-09-18,/vMxOmgmBGegjVObjlb8ugsjGgkD.jpg,/65Jr1JAgWlu9em8zHhAfrNJJQBt.jpg
+68,KPop Demon Hunters,"[14, 10402, 35, 16]",en,2025-06-20,/w3Bi0wygeFQctn6AqFTwhGNXRwL.jpg,/zT7Lhw3BhJbMkRqm9Zlx2YGMsY0.jpg
+69,Interstellar,"[12, 18, 878]",en,2014-11-05,/2ssWTSVklAEc98frZUQhgtGHx7s.jpg,/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg
+70,Dracula,"[27, 14, 10749]",fr,2025-07-30,/be5SIsRGMckO8tU9lrLcIik70Dy.jpg,/libhghrUSBSEdHgF9uP1SQES0nQ.jpg
+71,One Battle After Another,"[53, 80, 28]",en,2025-09-23,/gre7gyocZSuwd7M51CGlqsJqBmB.jpg,/lbBWwxBht4JFP5PsuJ5onpMqugW.jpg
+72,Tales from the Magic Garden,"[16, 18, 10751, 14]",cs,2025-11-06,/AupBUhnJEFedxF4vQ82LU9rOXDC.jpg,/6LZJKktqh9jTL27vMU6oxzdvB3W.jpg
+73,xXx,"[28, 12, 53, 80, 18]",en,2002-08-09,/2OHa6ukEq3Hce7Pc2kvu8wkmMFY.jpg,/xeEw3eLeSFmJgXZzmF2Efww0q3s.jpg
+74,Rolling Thunder,"[28, 18, 80, 53]",en,1977-11-02,/y0BpUwUfeg27tSZN94Gj7sJIieX.jpg,/9iZjVn6Q5FJa92SQLcFMrskpES9.jpg
+75,The Shawshank Redemption,"[18, 80]",en,1994-09-23,/zfbjgQE1uSd9wiPTX4VzsLi0rGG.jpg,/9cqNxx0GxF0bflZmeSMuL5tnGzr.jpg
+76,Undercover,"[18, 80, 53]",es,2024-10-11,/aJ3tiwuqRWgjvMonTC8499BCBi4.jpg,/4DKDLOEP14XCRJgDeSK9LWcPXc2.jpg
+77,Out,[99],en,1956-01-01,,
+78,Send Help,"[27, 53, 35]",en,2026-01-22,/hO2jx1H3XafR7Y8QbFgVH1sHTY9.jpg,/kL4MgAIZIYX3sCeG34N0XfVhCtt.jpg
+79,Willard,"[27, 18, 53]",en,2003-03-14,/xH9BdS2DzkX20Ly9FG8Iwczi3M.jpg,/hRVP8Ud9ehv7tp5WWQ4CHk2XNus.jpg
+80,Jurassic World Rebirth,"[878, 12, 28]",en,2025-07-01,/zNriRTr0kWwyaXPzdg1EIxf0BWk.jpg,/1RICxzeoNCAO5NpcRMIgg1XT6fm.jpg
+81,No Other Choice,"[80, 53, 35]",ko,2025-09-24,/vuUDwAi9UgLyNN9xZLtKTaLQWnl.jpg,/sBpxTGLzKnvPSVtL5yQYpSxvKEb.jpg
+82,Young Mothers,[18],fr,2025-05-23,/7UsW6pKkCdCmceBmdQ0MvV6zKhL.jpg,/okfaa71H1P0WC1uzYliOgYS2gte.jpg
+83,The Dreadful,[27],en,2026-02-20,/fAF3VGFBpItWNROmiGob60n0y5.jpg,/hGH8Ji7pG2ytHxo7ABqHM3TpzFA.jpg
+84,Pillion,"[10749, 18, 35]",en,2025-11-28,/rBYrtkAy9YtRuFpX1g6JbcjRT8h.jpg,/7Pd6ChSQjSXy4snJiorSdzg2cG3.jpg
+85,Kulong,[18],tl,2024-05-24,/mBc6RB7VajfykLqGx0ue7qatXky.jpg,/AnzrE2WHg3DtZrtmB9AnEbAh17m.jpg
+86,O,"[18, 10749, 53]",en,2001-08-31,/fc2mifxyCXyr66FMSmsfUXVREEg.jpg,/u8mFQU3YwNvZWcATncaAHUfEEMr.jpg
+87,Back to the Past,"[878, 28, 35]",cn,2025-12-31,/gpJr8wRED8BpBVaxM0eODQEBNwC.jpg,/h3OUaPfCaFmzwB2eMHik50RsXlP.jpg
+88,Sinners,"[27, 28, 53]",en,2025-04-16,/nAxGnGHOsfzufThz20zgmRwKur3.jpg,/qTvFWCGeGXgBRaINLY1zqgTPSpn.jpg
+89,Sisu: Road to Revenge,"[28, 10752]",fi,2025-10-21,/yCatt8lmp3oRFEcOZF8KHhsiASQ.jpg,/jNsttCWZyPtW66MjhUozBzVsRb7.jpg
+90,Avatar: The Way of Water,"[28, 12, 878]",en,2022-12-14,/cd8YDn7M0lfaHhZdU6MvCDxPalP.jpg,/t6HIqrRAclMCA60NsSmeqe9RmNV.jpg
+91,Avatar,"[28, 12, 14, 878]",en,2009-12-16,/vL5LR6WdxWPjLPFRLe133jXWsh5.jpg,/gKY6q7SjCkAU6FqvqWybDYgUKIF.jpg
+92,Mission: Impossible - The Final Reckoning,"[28, 53, 12]",en,2025-05-17,/538U9snNc2fpnOmYXAPUh3zn31H.jpg,/z53D72EAOxGRqdr7KXXWp9dJiDe.jpg
+93,Undercover,"[18, 80, 53]",es,2024-10-11,/aJ3tiwuqRWgjvMonTC8499BCBi4.jpg,/4DKDLOEP14XCRJgDeSK9LWcPXc2.jpg
+94,The Great Flood,"[878, 12, 18]",ko,2025-09-18,/8vLt9TYFZdAwYtqImvggTM5yFnF.jpg,/1tUOZQDgZaGqZtrB21MieiXARL2.jpg
+95,Strangers,"[28, 53, 80]",en,2024-08-16,/xGbNoh7aWmU81oYuxJoFI07Rz5I.jpg,/v6hYeC1asK2ZRU7Ygukn4tV1zlS.jpg
+96,Joe's College Road Trip,[35],en,2026-02-12,/dbr3eceKuGnKc9v5GaVTVtegZNK.jpg,/jWGOCUlzF4aCVLwHoiuqWWfhcrA.jpg
+97,Network,[18],en,1976-11-27,/of6OQnsvPHXEASczrBc3nVsMZ7q.jpg,/qZomlHsaALUtkFeMDwdYmwS2Pbo.jpg
+98,Frankenstein,"[18, 14, 27]",en,2025-10-17,/hpXBJxLD2SEf8l2CspmSeiHrBKX.jpg,/g4JtvGlQO7DByTI6frUobqvSL3R.jpg
+99,Toy Story 5,"[16, 10751, 35, 12]",en,2026-06-17,/coyHrYHD2xHhDoYD6o4uwoJ2o7b.jpg,/gaiMtK2ll6BLdK1qKFuZGDwwEuD.jpg
+100,Toy Story 5,"[16, 10751, 35, 12]",en,2026-06-17,/coyHrYHD2xHhDoYD6o4uwoJ2o7b.jpg,/gaiMtK2ll6BLdK1qKFuZGDwwEuD.jpg
+101,F1,"[28, 18]",en,2025-06-25,/1KFv63mmcBGVbFl3jxxozoSFlhA.jpg,/vqBmyAj0Xm9LnS1xe1MSlMAJyHq.jpg
+102,Untitled Home Invasion Romance,"[35, 28, 53, 10749]",en,2026-01-27,/2nVyPZuBYOUhhjsilF59ik9GIsG.jpg,/aBMnVU5yrsP5XMBZhG8aT2w6m9u.jpg
+103,Willard,"[27, 18, 53]",en,2003-03-14,/xH9BdS2DzkX20Ly9FG8Iwczi3M.jpg,/hRVP8Ud9ehv7tp5WWQ4CHk2XNus.jpg
+104,Los Tigres,"[53, 80]",es,2025-10-31,/ebRgQx5uLavQdK5GTha3zk1sRIC.jpg,/etJ74W3D9ZdpIk67dRSmC0akhjm.jpg
+105,Manglehorn,[18],en,2015-06-03,/gWIyXGdzd2s1OFSXEa199EPQ92S.jpg,/ms27YhpvgE5b0JIwaNiWw6EDC8g.jpg
+106,Diamantino,"[35, 878, 14]",pt,2018-11-28,/3Wl88SIaaBnEneMfu5iqOFls5wb.jpg,/yzsPJrEOE0f9giXewV1OBkFyDUk.jpg
+107,Hellfire,"[28, 53]",en,2026-02-05,/1gLFGrxHqQebqLWpISmoFR6XWtJ.jpg,/tQti9QTf13MfzNpXguijgNh7ojE.jpg
+108,Parasite,"[35, 53, 18]",ko,2019-05-30,/hiKmpZMGZsrkA3cdce8a7Dpos1j.jpg,/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg
+109,Hostile,"[18, 27, 10749, 878]",en,2018-03-08,/2Py1YSWpCA2gsZxl0bPk3sOrL37.jpg,/xnvFRg5TxGYIMKQJjA41lv0RNcg.jpg
+110,Pavane,"[10749, 18]",ko,2026-02-19,/atWzbjlDkfbkh4mdY3uuiF9vr3r.jpg,/wOXc8stx1CLvM6GC0ABKfWOkbYw.jpg
+111,BLUNT,"[18, 10751, 35]",en,2025-09-06,/l4OoypppukFqas6qks0ZekEwY0c.jpg,/klqBFCUU1lMZ2SsMQdQ7E0buneB.jpg
+112,Holy Ghost,"[27, 9648, 53]",en,2025-08-11,/eTodr0PX3fIDM4VFKJakpPGMZbp.jpg,/z1lwn6GWAjJ7CSn80ZcURb0Cj4G.jpg
+113,TRON: Ares,"[878, 12, 28]",en,2025-10-08,/pUNfHmVqfwRdILhCkU8TdysVOXo.jpg,/chpWmskl3aKm1aTZqUHRCtviwPy.jpg
+114,Worldbreaker,"[878, 28, 27]",en,2025-10-30,/gMItMzDOyrfQGZsMWRM9tdxq5cV.jpg,/7K8w6mdrJp0oaSoKWGyjSZ4Zv2z.jpg
+115,La deuda,[18],es,2025-10-04,/yWRYg5M2iEkcZpepQNMfKCs50gt.jpg,/8LFKzVhsPJmIA9v5BVDGGLk3Ltl.jpg
+116,Avengers: Infinity War,"[12, 28, 878]",en,2018-04-25,/mDfJG3LC3Dqb67AZ52x3Z0jU0uB.jpg,/7WsyChQLEftFiDOVTGkv3hFpyyt.jpg
+117,Superman,"[878, 12, 28]",en,2025-07-09,/aJDLz1748CIMZkCkyISYe5Hl6I7.jpg,/ldyfo0BKmz5rWtJJKCvwaNS4cJT.jpg
+118,Bureau 749,"[28, 12, 878]",zh,2024-10-01,/lf8IZ86ajGpgbuyHCZrXUeAMmvy.jpg,/flykCMw22y6yv8vKnBjmsW3pneo.jpg
+119,Fight Club,"[18, 53]",en,1999-10-15,/c6OLXfKAk5BKeR6broC8pYiCquX.jpg,/pB8BM7pdSp6B6Ih7QZ4DrQ3PmJK.jpg
+120,Avengers: Infinity War,"[12, 28, 878]",en,2018-04-25,/mDfJG3LC3Dqb67AZ52x3Z0jU0uB.jpg,/7WsyChQLEftFiDOVTGkv3hFpyyt.jpg
+121,The Dark Knight,"[28, 80, 53]",en,2008-07-16,/dqK9Hag1054tghRQSqLSfrkvQnA.jpg,/qJ2tW6WMUDux911r6m7haRef0WH.jpg
+122,The Great Flood,"[878, 12, 18]",ko,2025-09-18,/8vLt9TYFZdAwYtqImvggTM5yFnF.jpg,/1tUOZQDgZaGqZtrB21MieiXARL2.jpg
+123,TRON: Ares,"[878, 12, 28]",en,2025-10-08,/pUNfHmVqfwRdILhCkU8TdysVOXo.jpg,/chpWmskl3aKm1aTZqUHRCtviwPy.jpg
+124,Strangers,"[28, 53, 80]",en,2024-08-16,/xGbNoh7aWmU81oYuxJoFI07Rz5I.jpg,/v6hYeC1asK2ZRU7Ygukn4tV1zlS.jpg
+125,Ashgrove,[18],en,2022-12-02,/nOaLgER55rOF3lo7yJd2MR1CK59.jpg,/icxeBYLt5qcm1Snrovl40Ft90wJ.jpg
+126,Inception,"[28, 878, 12]",en,2010-07-15,/8ZTVqvKDQ8emSGUEMjsS4yHAwrp.jpg,/xlaY2zyzMfkhk0HSC5VUwzoZPU1.jpg
+127,Battling Amazons,"[28, 35]",en,1987-01-01,,
+128,One Mile: Chapter Two,"[28, 80]",en,2026-02-27,/jxQIjkJBTyZSxN3yyilpR0ns6HA.jpg,/3sjc9qXXmQoUWKQ3qIjS1nZaUJy.jpg
+129,Titanic,"[18, 10749]",en,1997-12-18,/xnHVX37XZEp33hhCbYlQFq7ux1J.jpg,/9xjZS2rlVxm8SFx8kPC3aIGCOYQ.jpg
+130,Mind Your Head,[99],en,2025-02-27,,
+131,Joe's College Road Trip,[35],en,2026-02-12,/dbr3eceKuGnKc9v5GaVTVtegZNK.jpg,/jWGOCUlzF4aCVLwHoiuqWWfhcrA.jpg
+132,Brother's Keeper,[18],tr,2021-08-20,/kIsyRhnS3v88Z29Vg5gpdjR9XDn.jpg,/yTqV0pzQkbpTs8olGghxOy3gwUX.jpg
+133,Ne Zha 2,"[16, 14, 12, 28]",zh,2025-01-29,/8btfz81bOJ2lC7cujYBTw03wzg3.jpg,/cb5NyNrqiCNNoDkA8FfxHAtypdG.jpg
+134,Man Cured,"[18, 35]",en,2025-08-16,/8QIcUzZbHiqiWDgVmoyy6QqcFkS.jpg,/bTVC3PKtMJnxvRDXxSJzM14pQ38.jpg
+135,Kantri,[28],te,2008-05-09,/dAY5UyVchFsLPlH3vY1ETLrqiaE.jpg,/kpwaPlWaQA1yif6NCWyIHAB2p5k.jpg
+136,Worldbreaker,"[878, 28, 27]",en,2025-10-30,/gMItMzDOyrfQGZsMWRM9tdxq5cV.jpg,/7K8w6mdrJp0oaSoKWGyjSZ4Zv2z.jpg
+137,The Fantastic 4: First Steps,"[878, 12, 28]",en,2025-07-23,/s94NjfKkcSczZ1FembwmQZwsuwY.jpg,/nf5qaSEvyYSNeFH0YhSs5EsBLX9.jpg
+138,My Fault,"[18, 10749, 53]",es,2023-06-08,/oz4U9eA6ilYf1tyiVuGmkftdLac.jpg,/w46Vw536HwNnEzOa7J24YH9DPRS.jpg
+139,Guilty as Sin,"[53, 18]",en,1993-06-04,/m4nj31M92zxZJxtjjOyZIYenTzQ.jpg,/a5b53cYM23bUA7OyoNyDtIJ38kc.jpg
+140,The Witches of Salem,"[18, 36]",fr,1957-04-26,/8zNjbfgMAwJHJHnygoExv16YwS1.jpg,/aCYBWWitF0pb5pDPUN8ZhR4FC3G.jpg
+141,Hostile,"[18, 27, 10749, 878]",en,2018-03-08,/2Py1YSWpCA2gsZxl0bPk3sOrL37.jpg,/xnvFRg5TxGYIMKQJjA41lv0RNcg.jpg
+142,Kraken,"[878, 12, 18]",ru,2025-04-17,/k8NQUrnUtX20bCreOKyEv9J7U3S.jpg,/c97Xlokfn4M6ZOQmt7OfXfLDwd5.jpg
+143,Return to Silent Hill,"[27, 9648]",en,2026-01-21,/nTbO6UF944b0VZrgypMK5rFYRSW.jpg,/fqAGFN2K2kDL0EHxvJaXzaMUkkt.jpg
+144,Superman,"[878, 12, 28]",en,2025-07-09,/aJDLz1748CIMZkCkyISYe5Hl6I7.jpg,/ldyfo0BKmz5rWtJJKCvwaNS4cJT.jpg
+145,O,"[18, 10749, 53]",en,2001-08-31,/fc2mifxyCXyr66FMSmsfUXVREEg.jpg,/u8mFQU3YwNvZWcATncaAHUfEEMr.jpg
+146,Omniscient Reader: The Prophecy,"[28, 12, 14]",ko,2025-07-23,/mZGsJUzQ4dONUBccxhImBqxaSQt.jpg,/3R3dXO2nm8JyR5NG7SEfii7RzlV.jpg
+147,Bureau 749,"[28, 12, 878]",zh,2024-10-01,/lf8IZ86ajGpgbuyHCZrXUeAMmvy.jpg,/flykCMw22y6yv8vKnBjmsW3pneo.jpg
+148,Tokyo Godfathers,"[16, 18, 35]",ja,2003-12-05,/mnppPdfdtKPNoRemzIZDwOKpgfv.jpg,/sPC66btzQlzuRdPKiSDYZ5Hvxgc.jpg
+149,"Good Luck, Have Fun, Don't Die","[878, 28, 12, 35]",en,2026-02-13,/yjOSpDQe8tzr8easpjTFVoQXsOX.jpg,/af7yguGbWQyvYtk6QCD5l4yBbKN.jpg
+150,A Haunting in Salem,"[27, 53]",en,2011-08-23,/qAjApURE0DbElrzPfQuYVKo4WZa.jpg,/1csYnDawo4SW9zmPFpbhW2SF1nF.jpg
+151,Untitled Home Invasion Romance,"[35, 28, 53, 10749]",en,2026-01-27,/2nVyPZuBYOUhhjsilF59ik9GIsG.jpg,/aBMnVU5yrsP5XMBZhG8aT2w6m9u.jpg
+152,Rental Family,"[18, 35]",en,2025-11-20,/euoXeFAOt9o7yAWA9zGZk7DdZWZ.jpg,/nRrwqApUDFL8gLGyJFIdDkmoule.jpg
+153,Outlander,"[878, 28]",en,2008-04-24,/75CQb5bFSFiQwOgWU5BMjYKmSv8.jpg,/nCZzrFonDkWfYkfxzsPByBY4Lvk.jpg
+154,The Industry,[],en,,,/1Majw2L5B0Jy7o5SeyJC3Zlp3dA.jpg
+155,Zootopia,"[16, 12, 10751, 35]",en,2016-02-11,/9tOkjBEiiGcaClgJFtwocStZvIT.jpg,/hlK0e0wAQ3VLuJcsfIYPvb4JVud.jpg
+156,How to Train Your Dragon,"[14, 10751, 28, 12]",en,2025-06-06,/79PNOxNXSe5e0bhEj11QJPlsdCN.jpg,/53dsJ3oEnBhTBVMigWJ9tkA5bzJ.jpg
+157,EKS,[18],tl,2024-03-01,/2Ve7sjxLb3rKG8qJ1t7QEuNI0UM.jpg,/gcK3HgN6IHNOviXnX11W6aFLTGv.jpg
+158,The Hobbit: An Unexpected Journey,"[12, 14, 28]",en,2012-12-12,/xyXmtuvsoM5J3yNad0nvcetpBdY.jpg,/yHA9Fc37VmpUA5UncTxxo3rTGVA.jpg
+159,JUJUTSU KAISEN: Execution,"[16, 28]",ja,2025-11-07,/gtKglOSEq3d4MgQE4VsrT1sRkd0.jpg,/v0s3dx6am0RzfsuK3KdEy8ZoCDs.jpg
+160,Spider-Man: No Way Home,"[28, 12, 878]",en,2021-12-15,/nqUThBjou0TAWXu93Q4SNFpgqai.jpg,/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg
+161,Cash and Carry,[35],en,1937-09-03,/cjMoRk0qD5WPDKjN2Tae2aDuLHY.jpg,/4tyuquZ3H7Mpi8LetZvkph1LCff.jpg
+162,Guilty as Sin,"[53, 18]",en,1993-06-04,/m4nj31M92zxZJxtjjOyZIYenTzQ.jpg,/a5b53cYM23bUA7OyoNyDtIJ38kc.jpg
+163,Nuremberg,"[36, 18]",en,2025-11-06,/bf5TG9RODkPXmtJSgf8Iymof1wl.jpg,/7cWTGH2svfNHWVRjsfKIBob9pDj.jpg
+164,Unfamiliar Cosmos,[878],en,2020-04-17,,/eeCzvfi83boyPxpAEvNK5Ag7i9P.jpg
+165,Osiris,"[878, 28, 27]",en,2025-07-25,/ySHUoK4utUOiSfCinw81H1TsV0E.jpg,/3YtZHtXPNG5AleisgEatEfZOT2w.jpg
+166,Spider-Man: Across the Spider-Verse,"[16, 28, 12, 878]",en,2023-05-31,/9xfDWXAUbFXQK585JvByT5pEAhe.jpg,/8Vt6mWEReuy4Of61Lnj5Xj704m8.jpg
+167,Night Always Comes,"[53, 18, 80]",en,2025-08-15,/cVqQdzqo0ymSFJqU87bIiHV8bA7.jpg,/1jDo1nG7rtjaaQGpr6e73x9i9Xp.jpg
+168,Brother's Keeper,[18],tr,2021-08-20,/kIsyRhnS3v88Z29Vg5gpdjR9XDn.jpg,/yTqV0pzQkbpTs8olGghxOy3gwUX.jpg
+169,Muzzle: City of Wolves,"[28, 53, 9648]",en,2025-11-13,/ncI1PlBcANixIkgQSnjsSRz4OyT.jpg,/8qTMRmC07XCGidnKQFLbRM3FoDU.jpg
+170,Kantara - A Legend: Chapter 1,"[28, 18, 14]",kn,2025-10-01,/w57nxiBIODAYHLRs1xmrCY9zEFe.jpg,/ehQPboTPaIMkMUOoNOh8e7pZ5Rp.jpg
+171,Pulp Fiction,"[53, 80, 35]",en,1994-09-10,/96hiUXEuYsu4tcnvlaY8tEMFM0m.jpg,/vQWk5YBFWF4bZaofAbv0tShwBvQ.jpg
+172,The Memory of a Killer,"[80, 53, 28]",nl,2003-10-15,/vKVX9hV2HnCPe8XnauCQKEHQCwv.jpg,/rKFzSI5XtDOfXoULnY5TEaNpuMC.jpg
+173,Ashgrove,[18],en,2022-12-02,/nOaLgER55rOF3lo7yJd2MR1CK59.jpg,/icxeBYLt5qcm1Snrovl40Ft90wJ.jpg
+174,Six Degrees of Separation,"[9648, 18, 35]",en,1993-12-08,/e9L5dpi41k3YkbavwgOGXnQGCe1.jpg,/oH0bl69uZZA6dAclgFRkm1Vwcry.jpg
+175,Comet in Moominland,"[16, 35, 14, 12, 10751]",ja,1992-08-08,/WxgHV8OobHqXp91EPEeNirCab4.jpg,/b4O25Joz13gZqXusA5tyqO4Y4OV.jpg
+176,Tokyo Godfathers,"[16, 18, 35]",ja,2003-12-05,/mnppPdfdtKPNoRemzIZDwOKpgfv.jpg,/sPC66btzQlzuRdPKiSDYZ5Hvxgc.jpg
+177,A Minecraft Movie,"[10751, 14, 35, 12]",en,2025-03-31,/2Nti3gYAX513wvhp8IiLL6ZDyOm.jpg,/yFHHfHcUgGAxziP1C3lLt0q2T4s.jpg
+178,Mind Your Head,[99],en,2025-02-27,,
+179,Ballerina,"[28, 53, 80]",en,2025-06-04,/1yktYsxkmUtUFTUnCAUaqG6FEiz.jpg,/2VUmvqsHb6cEtdfscEA6fqqVzLg.jpg
+180,Journey into Fear,[53],en,1975-08-08,/6hlC4iJmnjksUtZU6C7wDG1aiym.jpg,/hpwhvnefWCqcfSjkmSqkoKf2GJE.jpg
+181,Muzzle: City of Wolves,"[28, 53, 9648]",en,2025-11-13,/ncI1PlBcANixIkgQSnjsSRz4OyT.jpg,/8qTMRmC07XCGidnKQFLbRM3FoDU.jpg
+182,Hoppers,"[16, 10751, 35, 878]",en,2026-03-04,/2RrLuIfIzGWWIH8IAEo6o0IYHmx.jpg,/d7WizU73PscO3dQor0Ogfx9xy8N.jpg
+183,Breaking News,"[28, 80, 53]",cn,2004-06-10,/3ozoba38ZlAAfk1ccijN7J66lBA.jpg,/trPz3zKnEMhe4VQ9nAKWzzCWNXX.jpg
+184,Tarzan and the Mermaids,"[28, 12]",en,1948-05-15,/hQ7xqQpfkBrlJE7E7VLLSJFD7kH.jpg,/729UP57wf1f9qwYmXsRqSBt0oJC.jpg
+185,Spider-Man: No Way Home,"[28, 12, 878]",en,2021-12-15,/nqUThBjou0TAWXu93Q4SNFpgqai.jpg,/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg
+186,Bang,"[28, 53]",th,2025-07-11,/sW0X1265yuRHUorLKCrJDv9TJD7.jpg,/8SUzKOqe2ectvhYdSnR7Vq2F3n1.jpg
+187,A Minecraft Movie,"[10751, 14, 35, 12]",en,2025-03-31,/2Nti3gYAX513wvhp8IiLL6ZDyOm.jpg,/yFHHfHcUgGAxziP1C3lLt0q2T4s.jpg
+188,Deadpool & Wolverine,"[28, 35, 878]",en,2024-07-24,/ufpeVEM64uZHPpzzeiDNIAdaeOD.jpg,/8cdWjvZQUExUUTzyp4t6EDMubfO.jpg
+189,The Vans Warped Tour 15th Anniversary Celebration,[10402],en,2009-01-01,/pWsfvAcPvPdfXifxtXwXUDKPeh4.jpg,/uENlpnqF3KiU1dOoNd6ewezu9J2.jpg
+190,Dune: Part Two,"[878, 12]",en,2024-02-27,/ylkdrn23p3gQcHx7ukIfuy2CkTE.jpg,/1pdfLvkbY9ohJlCjQH2CZjjYVvJ.jpg
+191,Stone Cold Dead,"[53, 27]",en,1979-09-14,/a4roD45PAeqMBiDw4FsGdXYbDrn.jpg,/4LXtVvX3GLwE2N8JU57iKKqR78g.jpg
+192,We Bury the Dead,"[27, 53]",en,2026-01-01,/vbkW4KerpshPZnP84w9qwSfYrhu.jpg,/xZqo0yPARmyF8TACVNyaOACkYWG.jpg
+193,Raid 2,"[80, 18, 53]",hi,2025-05-01,/uKhBujLqYCcfU1kaxXHNCEyZnT.jpg,/562SAxZP1sLuYqDDTuODu3hdGyx.jpg
+194,Ballerina,"[28, 53, 80]",en,2025-06-04,/1yktYsxkmUtUFTUnCAUaqG6FEiz.jpg,/2VUmvqsHb6cEtdfscEA6fqqVzLg.jpg
+195,Angels' Brigade,"[28, 35]",en,1979-02-01,,/l4TzXV6PiMndm1Hdm3Uvs9cVHZ3.jpg
+196,Spider-Man: Across the Spider-Verse,"[16, 28, 12, 878]",en,2023-05-31,/9xfDWXAUbFXQK585JvByT5pEAhe.jpg,/8Vt6mWEReuy4Of61Lnj5Xj704m8.jpg
+197,Ticks,"[27, 878]",en,1993-10-12,/asWJoeclSZ0HiNVMcr9uTzzRwwl.jpg,/3tfMPBgpfwu2V403u9gST5ReWl9.jpg
+198,I Can Only Imagine 2,"[18, 10402]",en,2026-02-19,/qHBnPZA3J6hSl9a3Q1JAQzDeo2L.jpg,/qYBCs9nBmdNCLduw5BTlendq89z.jpg
+199,Oppenheimer,"[18, 36]",en,2023-07-19,/ycnO0cjsAROSGJKuMODgRtWsHQw.jpg,/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg
+200,All Over the Guy,"[35, 10749]",en,2001-08-10,/dJxCfBDW1VuwNi0ZyiTgJcOgvNH.jpg,/tIO6jd2stGtM6pLvX8Jm85efw9Q.jpg
+201,Shrek,"[16, 35, 14, 12, 10751]",en,2001-05-18,/sRvXNDItGlWCqtO3j6wks52FmbD.jpg,/iB64vpL3dIObOtMZgX3RqdVdQDc.jpg
+202,Osiris,"[878, 28, 27]",en,2025-07-25,/ySHUoK4utUOiSfCinw81H1TsV0E.jpg,/3YtZHtXPNG5AleisgEatEfZOT2w.jpg
+203,Harry Potter and the Philosopher's Stone,"[12, 14]",en,2001-11-16,/1XAC6RPT01UX9EQGy2JVn5c8pgy.jpg,/wuMc08IPKEatf9rnMNXvIDxqP4W.jpg
+204,"The Chronicles of Narnia: The Lion, the Witch and the Wardrobe","[12, 10751, 14]",en,2005-12-07,/tuDhEdza074bA497bO9WFEPs6O6.jpg,/iREd0rNCjYdf5Ar0vfaW32yrkm.jpg
+205,The Naked Gun,"[28, 35, 80]",en,2025-07-30,/kzeBfhXMRWiykBsqoL3UbfaM0S.jpg,/rwla9vqzrKVVKVKiOuROTIXGsxj.jpg
+206,I Swear,"[18, 36]",en,2025-09-22,/fe6kkxaxn0mCU2gl1vfU44IYWsy.jpg,/vUwyhNWBKkSwK8ELvEeBRwV724h.jpg
+207,The Conjuring: Last Rites,[27],en,2025-09-03,/tcBX2dtkNozZ0uDLVaxXrE6rqyN.jpg,/byWgphT74ClOVa8EOGzYDkl8DVL.jpg
+208,Twisted,"[27, 53]",en,2026-02-06,/55e59Ls6zc37c7orbaWDyriyGPi.jpg,/rF6txsM6cgF9vg6Ra5sNbkvUwrw.jpg
+209,Kantara - A Legend: Chapter 1,"[28, 18, 14]",kn,2025-10-01,/w57nxiBIODAYHLRs1xmrCY9zEFe.jpg,/ehQPboTPaIMkMUOoNOh8e7pZ5Rp.jpg
+210,Toy Story,"[10751, 35, 16, 12]",en,1995-11-22,/bSoOThXLrbgtphS2eZjwy2xYwVt.jpg,/uXDfjJbdP4ijW5hWSBrPrlKpxab.jpg
+211,Spirited Away,"[16, 10751, 14]",ja,2001-07-20,/ukfI9QkU1aIhOhKXYWE9n3z1mFR.jpg,/39wmItIWsg5sZMyRUHLkWBcuVCM.jpg
+212,Sentimental Value,[18],no,2025-08-20,/mXlDBIHh9hBkDCMNazGV2fEPr5J.jpg,/pz9NCWxxOk3o0W3v1Zkhawrwb4i.jpg
+213,From Nashville With Music,"[18, 10402]",en,1969-07-07,,/vrKvd4ac1ICQ2YzNRrOm7VueDS4.jpg
+214,A Legend,"[28, 12, 14]",zh,2024-07-05,/7FDVhmCur4LMOfnXMteiSCtsdOb.jpg,/qbImUt1d3itXcB81BCItPZlfbyr.jpg
+215,The Hessen Affair,"[36, 18, 28]",en,2009-01-14,/iec5i9dC6tR6iq5sOQFt4zpC6w9.jpg,/8jH4GY1EHHWYjcekFj3t40BPlOw.jpg
+216,"EP, Hi Dorothy",[18],ko,2021-03-10,/eRIRWv06uCvdcdxTAzsZGVfoiqy.jpg,/tEStXM9XOKrHswgWSX9AMphR4M4.jpg
+217,Inside Out 2,"[16, 12, 35, 10751]",en,2024-06-11,/p5ozvmdgsmbWe0H8Xk7Rc8SCwAB.jpg,/vpnVM9B6NMmQpWeZvzLvDESb2QY.jpg
+218,Top Gun: Maverick,"[28, 18]",en,2022-05-21,/AaV1YIdWKnjAIAOe8UUKBFm327v.jpg,/62HCnUTziyWcpDaBO2i1DX17ljH.jpg
+219,The Unholy Trinity,"[37, 12, 80]",en,2025-06-13,/hyc9gq0Oq5THKak7tB7oqC2Rd6z.jpg,/gXYYIX5VesrDtR1iYJfvUnJBPLB.jpg
+220,The Dinner,"[35, 36]",es,2025-10-17,/9C10gUV5uR1UZtvGs8uQtb6xi7Z.jpg,/8Ct1yY0ClGwgQpnsipRcaFC27xF.jpg
+221,Route 666,"[27, 28, 53]",en,2001-10-30,/fnDwHw8drCBGoJNUoS5dLHKXRlq.jpg,/mrTWXADgmrvPmXsC7PX7V7yAIEh.jpg
+222,Dune,"[878, 12]",en,2021-09-15,/wYMbnrdRCREjNLwFlG5SLWzBjui.jpg,/d5NXSklXo0qyIYkgV94XAgMIckC.jpg
+223,Yadang: The Snitch,"[80, 28, 35, 18, 53]",ko,2025-04-16,/9pdoEzieGdUTlRWTAO7QP8q1tIo.jpg,/y7dsDbG8zVWkrkyOhA6ckZXX1uC.jpg
+224,High Forces,"[28, 80]",zh,2024-09-29,/8lqfrOBQ2EcY7znD3LxTYcvlh25.jpg,/v8ySgr4CE45SrrIt4PqqYc1diW6.jpg
+225,Who Wants to Marry an Astronaut?,"[35, 10749]",es,2025-06-26,/q2tUReeNgsYTs7tIJ98I4450QeM.jpg,/8kyqyI6mQmIVdLPRvIaFskVIcQW.jpg
+226,Shahenshah,[28],hi,1988-01-29,/qDyFe7gMnom72qfUEYzWrgwB4ss.jpg,/2ZUpj73MzEh2YwVzJNVUqBSu2LZ.jpg
+227,Power of Love,"[53, 18]",de,2023-10-20,/7Ex2Rh8mEj5NBIPEeyKBhgY3GW7.jpg,/dqUQ0xyMaJn5g7RYqCMykbXXW4C.jpg
+228,Forrest Gump,"[35, 18, 10749]",en,1994-06-23,/67HggiWaP9ZLv5sPYmyRV37yAJM.jpg,/saHP97rTPS5eLmrLQEcANmKrsFl.jpg
+229,"Miraculous World: Tokyo, Stellar Force","[16, 10751, 28, 12]",fr,2025-12-07,/3kps0wiGFMRVkSXxbebbAUeWrN3.jpg,/vFaopnGXRXxRf4z2Z3IgA1QtOyV.jpg
+230,Killer Whale,"[53, 27, 28, 9648, 878]",en,2026-01-16,/ykigHs1OIyqqV04zfFqIlSHp546.jpg,/xC6zdIoIHjhOIFmjNyGgtzhuhiF.jpg
+231,Kill Bill: The Whole Bloody Affair,"[28, 80]",en,2011-03-27,/qe4Tp0hURXqiih5AV1kHimXIt3u.jpg,/lRQHS8x9ofDPVx9gjq6sGAfERkf.jpg
+232,Pathfinder,"[12, 28]",en,2007-01-11,/x1iHrvnxB3IuNBiTvqdfQqeh2mk.jpg,/mME7efKNTU7jzXTgFkI1t0aQUiz.jpg
+233,Greenland,"[28, 12, 53, 878]",en,2020-07-29,/uorMP2U1F0AfogYMz4lYu2EbgYo.jpg,/bNo2mcvSwIvnx8K6y1euAc1TLVq.jpg
+234,Wicked of Oz,"[28, 14, 27]",en,2026-01-29,/4PUPZHbMxqoFTPpfZ5OtXRPG2OO.jpg,/a3KqiPPgjbvWCD2Ez3Om2zxb2Wr.jpg
+235,The Godfather Part II,"[18, 80]",en,1974-12-20,/kGzFbGhp99zva6oZODW5atUtnqi.jpg,/hek3koDUyRQk7FIhPXsa6mT2Zc3.jpg
+236,Formidable,"[18, 35]",fr,2008-04-30,/wfQNSueCwPlkAbhkQi7AgJcVe5Z.jpg,/tcMkHO4kkdDSO2ukIp7SfHJDxse.jpg
+237,Star Wars,"[12, 28, 878]",en,1977-05-25,/2w4xG178RpB4MDAIfTkqAuSJzec.jpg,/6FfCtAuVAW8XJjZ7eWeLibRLWTw.jpg
+238,Uhaw,[18],tl,2024-09-13,/1bRxlfuI7woxnxM8Z8LIgaKpffH.jpg,/xsUjSNFXyEWe3zkcHOWm7Hw7dR6.jpg
+239,Se7en,"[80, 9648, 53]",en,1995-09-22,/iwgl8zlrrfvfWp9k9Paj8lvFEvS.jpg,/191nKfP0ehp3uIvWqgPbFmI4lv9.jpg
+240,Joker,"[80, 53, 18]",en,2019-10-01,/hO7KbdvGOtDdeg0W4Y5nKEHeDDh.jpg,/udDclJoHjfjb8Ekgsd4FDteOkCU.jpg
+241,The Family Plan 2,"[28, 35]",en,2025-11-11,/7nAVXGHHtaNcdsqvDXmY6R9N0fG.jpg,/semFxuYx6HcrkZzslgAkBqfJvZk.jpg
+242,The Hobbit: The Battle of the Five Armies,"[28, 12, 14]",en,2014-12-10,/3UbaCMmqOd7mca4Y5DOzY2ZVTyX.jpg,/xT98tLqatZPQApyRmlPL12LtiWp.jpg
+243,It,"[27, 53, 18]",en,2017-09-06,/u444mvKeZf8vgfYmpRax1bwSXmg.jpg,/9E2y5Q7WlCVNEhP5GiVTjhEhx1o.jpg
+244,Ligaw,"[18, 10749]",tl,2025-05-09,/heMsXGykub43tU79I9hv6T1vHRc.jpg,/yc8V3KEnhvPrzXpdYTXdTvjpOb5.jpg
+245,Lilo & Stitch,"[10751, 878, 35]",en,2025-05-17,/7Zx3wDG5bBtcfk8lcnCWDOLM4Y4.jpg,/ckQzKpQJO4ZQDCN5evdpKcfm7Ys.jpg
+246,All Over the Guy,"[35, 10749]",en,2001-08-10,/dJxCfBDW1VuwNi0ZyiTgJcOgvNH.jpg,/tIO6jd2stGtM6pLvX8Jm85efw9Q.jpg
+247,The Terminator,"[28, 53, 878]",en,1984-10-26,/ffdqHMWkh1h9MABwIfbfRJhgFW6.jpg,/qvktm0BHcnmDpul4Hz01GIazWPr.jpg
+248,Blue Demon vs. the Diabolical Women,"[878, 12, 27, 28, 80, 53]",es,1968-09-26,/mHrtRlQhHbTCRQhki9KtJKZ4WEE.jpg,/yHfHcWne6r5n06OLzDeECtzgm91.jpg
+249,The Godfather Part II,"[18, 80]",en,1974-12-20,/kGzFbGhp99zva6oZODW5atUtnqi.jpg,/hek3koDUyRQk7FIhPXsa6mT2Zc3.jpg
+250,Uhaw,[18],tl,2024-09-13,/1bRxlfuI7woxnxM8Z8LIgaKpffH.jpg,/xsUjSNFXyEWe3zkcHOWm7Hw7dR6.jpg
+251,Pirates of the Caribbean: The Curse of the Black Pearl,"[12, 14, 28]",en,2003-07-09,/uRNgkJSkNBFbbn9fPsEjDIy8Sh3.jpg,/poHwCZeWzJCShH7tOjg8RIoyjcw.jpg
+252,Avengers: Endgame,"[12, 878, 28]",en,2019-04-24,/7RyHsO4yDXtBv1zUU3mTpHeQ0d5.jpg,/ulzhLuWrPK07P1YkdWQLZnQh1JL.jpg
+253,The Lord of the Rings: The Two Towers,"[12, 14, 28]",en,2002-12-18,/kWYfW2Re0rUDE6IHhy4CRuKWeFr.jpg,/5VTN0pR8gcqV3EPUHHfMGnJYN9L.jpg
+254,The Ugly Stepsister,"[27, 35, 14, 18]",no,2025-03-07,/ev9kxdoJ5IYVprt1OvH2SMWJdU1.jpg,/rayAREIKtSinuov10GvrZHyXfXH.jpg
+255,Laila,"[35, 10749]",te,2025-02-14,/vNUwK5P42m81uG57kKI1WxSZwIQ.jpg,/aFogllaRGlAhk1nqvVGFpZpl4qU.jpg
+256,Raid 2,"[80, 18, 53]",hi,2025-05-01,/uKhBujLqYCcfU1kaxXHNCEyZnT.jpg,/562SAxZP1sLuYqDDTuODu3hdGyx.jpg
+257,Your Name.,"[16, 10749, 18]",ja,2016-08-26,/8x9iKH8kWA0zdkgNdpAew7OstYe.jpg,/q719jXXEzOoYaps6babgKnONONX.jpg
+258,Troll 2,"[28, 14, 53]",no,2025-11-30,/lZYMXx74pWmbj5Q5jp1QaMvmuuR.jpg,/p6xAExLNFbHcLfvSuvLPoM8aqZU.jpg
+259,Fast X,"[28, 80, 53]",en,2023-05-17,/4XM8DUTQb3lhLemJC51Jx4a2EuA.jpg,/fiVW06jE7z9YnO4trhaMEdclSiC.jpg
+260,Maj Rati Keteki,[18],as,2017-10-27,,/x8RtNnvFpB2dZWo4GAlOSh7n0s5.jpg
+261,Anaconda,"[12, 27, 53]",en,2024-03-01,/gSVk4r8Q4R8aeGY0hhEG3bE0QzL.jpg,/pPfsEXzfk2URkQ1OxhUShAXdxMr.jpg
+262,The Lord of the Rings: The Two Towers,"[12, 14, 28]",en,2002-12-18,/kWYfW2Re0rUDE6IHhy4CRuKWeFr.jpg,/5VTN0pR8gcqV3EPUHHfMGnJYN9L.jpg
+263,Lilo & Stitch,"[10751, 878, 35]",en,2025-05-17,/7Zx3wDG5bBtcfk8lcnCWDOLM4Y4.jpg,/ckQzKpQJO4ZQDCN5evdpKcfm7Ys.jpg
+264,Spider-Man,"[28, 878]",en,2002-05-01,/zQ8AxTPiCiS5nnwXpwTBPBHSaa5.jpg,/kjdJntyBeEvqm9w97QGBdxPptzj.jpg
+265,Final Destination Bloodlines,"[27, 9648]",en,2025-05-14,/uIpJPDNFoeX0TVml9smPrs9KUVx.jpg,/6WxhEvFsauuACfv8HyoVX6mZKFj.jpg
+266,Black Phone 2,"[27, 53]",en,2025-10-15,/6zKjoOOb3OZnZuiHtQZn4Kd69Gq.jpg,/gFddBLQ8wj9M9O82iPzgX5KVNHz.jpg
+267,¿Quieres Ser Mi Novia?,"[35, 10749]",es,2026-02-12,/1ZruuRXztqC3QQybbgbVxVrdNjv.jpg,/oscW8xV8EhRYj7iAhyVlBohKqxo.jpg
+268,The Lion King,"[10751, 16, 18, 12]",en,1994-06-15,/6GF9uJs7AnbcJvyfoZyjZv063Oo.jpg,/sKCr78MXSLixwmZ8DyJLrpMsd15.jpg
+269,RiffTrax Live: Star Raiders,"[35, 878, 12]",en,2019-07-06,/bFRqXz4Y98dP2voRKFPY6slsCcA.jpg,/avj6UHG4ZDbBzS4y6n32MzQiyd1.jpg
+270,Iron Man,"[28, 878, 12]",en,2008-04-30,/cKvDv2LpwVEqbdXWoQl4XgGN6le.jpg,/78lPtwv72eTNqFW9COBYI0dWDJa.jpg
+271,Avengers: Endgame,"[12, 878, 28]",en,2019-04-24,/7RyHsO4yDXtBv1zUU3mTpHeQ0d5.jpg,/ulzhLuWrPK07P1YkdWQLZnQh1JL.jpg
+272,The Gorge,"[10749, 878, 53]",en,2025-02-13,/9nhjGaFLKtddDPtPaX5EmKqsWdH.jpg,/7iMBZzVZtG0oBug4TfqDb9ZxAOa.jpg
+273,The Old Woman with the Knife,"[28, 9648, 18]",ko,2025-04-30,/fepnF3W4VP3s8ui8nDtrlsFVYwO.jpg,/wbmxnsv41vsg5UEaNDlf203dOWw.jpg
+274,Good Boy,[27],en,2025-10-01,/mPtPJzBkwksUoMEKpkZqxBrlKpZ.jpg,/daInKxjoRNLFWIus64fHAy91V0k.jpg
+275,Nobody 2,"[28, 53]",en,2025-08-13,/82C04rTiXYZ7c8XZv91Nu53w82Y.jpg,/iyxwxDZCpIm0vIORaHpmgJv2BGF.jpg
+276,Harry Potter and the Prisoner of Azkaban,"[12, 14]",en,2004-05-31,/vbk5CfaAHOjQPSAcYm6AoRRz2Af.jpg,/aWxwnYoe8p2d2fcxOqtvAtJ72Rw.jpg
+277,The Super Mario Bros. Movie,"[10751, 35, 12, 16, 14]",en,2023-04-05,/9n2tJBplPbgR2ca05hS5CKXwP2c.jpg,/qNBAXBIQlnOThrVvA6mA2B5ggV6.jpg
+278,In Honor of Adrianna: A Warrior's Love Story,"[99, 10751, 10752]",en,2024-07-29,,/xLuMV5dBcJVbEsdKIS82LiHEOxB.jpg
+279,Cash and Carry,[35],en,1937-09-03,/cjMoRk0qD5WPDKjN2Tae2aDuLHY.jpg,/4tyuquZ3H7Mpi8LetZvkph1LCff.jpg
+280,28 Days Later,"[27, 53, 878]",en,2002-10-31,/aJFwk1clMal1prxAvKAgHxKPAf.jpg,/sQckQRt17VaWbo39GIu0TMOiszq.jpg
+281,Avengers: Doomsday,"[878, 28, 12]",en,2026-12-16,/3eOINbgRs8WiWfQfViXeuZ3enrs.jpg,/8HkIe2i4ScpCkcX9SzZ9IPasqWV.jpg
+282,Cold Storage,"[35, 27, 878]",en,2026-01-29,/yHlVD4zBJ2MMevQo2uVb8m8LWOm.jpg,/pfqkETJ2A3zXZJuNcufZbAJNnKA.jpg
+283,"Baby Boy, Baby Girl",[18],tl,2023-03-22,/5pP3kpWWPJrtIafL0o5lxOova7N.jpg,/cTi6t2F7i5MjhqRIEBjav6GJLfa.jpg
+284,Good Boy,[27],en,2025-10-01,/mPtPJzBkwksUoMEKpkZqxBrlKpZ.jpg,/daInKxjoRNLFWIus64fHAy91V0k.jpg
+285,Black Phone 2,"[27, 53]",en,2025-10-15,/6zKjoOOb3OZnZuiHtQZn4Kd69Gq.jpg,/gFddBLQ8wj9M9O82iPzgX5KVNHz.jpg
+286,Pirates of the Caribbean: The Curse of the Black Pearl,"[12, 14, 28]",en,2003-07-09,/uRNgkJSkNBFbbn9fPsEjDIy8Sh3.jpg,/poHwCZeWzJCShH7tOjg8RIoyjcw.jpg
+287,Back to the Future,"[12, 35, 878]",en,1985-07-03,/qskzmLTbarKnXDbo2HRj4NJ3vcW.jpg,/vN5B5WgYscRGcQpVhHl6p9DDTP0.jpg
+288,Spider-Man: Into the Spider-Verse,"[16, 28, 12, 878]",en,2018-12-06,/8mnXR9rey5uQ08rZAvzojKWbDQS.jpg,/iiZZdoQBEYBv6id8su7ImL0oCbD.jpg
+289,The Secret Agent,"[80, 18, 53]",pt,2025-07-23,/eeGRpU64sIrRApjWXvTpK5Lep2K.jpg,/iLE2YOmeboeTDC7GlOp1dzh1VFo.jpg
+290,The Unholy Trinity,"[37, 12, 80]",en,2025-06-13,/hyc9gq0Oq5THKak7tB7oqC2Rd6z.jpg,/gXYYIX5VesrDtR1iYJfvUnJBPLB.jpg
+291,Fate/kaleid liner Prisma☆Illya: Dance at the Sports Festival!,"[16, 14, 35]",ja,2014-03-10,/kF3ruatQCQVDEDqHVLXgWEF17TU.jpg,/qaC8H3FengQcTxjFmlPBCcAJTff.jpg
+292,Despicable Me 4,"[10751, 35, 16, 878, 28]",en,2024-06-20,/twsxsfao6ZOVvT8LfudH603MMi6.jpg,/wWba3TaojhK7NdycRhoQpsG0FaH.jpg
+293,Roofman,"[80, 35, 18]",en,2025-10-08,/2YOnE2qmoyyOUqQsFit12gDSauk.jpg,/wXDFtcnYtevleGzCmAD2ReQnJ4l.jpg
+294,Wrath of Man,"[53, 80, 18]",en,2021-04-22,/70AV2Xx5FQYj20labp0EGdbjI6E.jpg,/M7SUK85sKjaStg4TKhlAVyGlz3.jpg
+295,Harry Potter and the Goblet of Fire,"[12, 14]",en,2005-11-16,/8f9dnOtpArDrOMEylpSN9Sc6fuz.jpg,/fECBtHlr0RB3foNHDiCBXeg9Bv9.jpg
+296,Sonic the Hedgehog 3,"[28, 878, 35, 10751]",en,2024-12-19,/noPEm6Vu9Lm6QUdTGLOyRgk4M6s.jpg,/d8Ryb8AunYAuycVKDp5HpdWPKgC.jpg
+297,Barbie,"[35, 12]",en,2023-07-19,/ctMserH8g2SeOAnCw5gFjdQF8mo.jpg,/iuFNMS8U5cb6xfzi51Dbkovj7vM.jpg
+298,Wicked: For Good,"[14, 12, 10749]",en,2025-11-19,/cGbPBHKSFO7hSIjxkb3KOaGdOep.jpg,/si9tolnefLSUKaqQEGz1bWArOaL.jpg
+299,Fifty Shades of Grey,"[18, 10749, 53]",en,2015-02-11,/7IGKrY1f1KfwMipx9wZC4NRgIdF.jpg,/63kGofUkt1Mx0SIL4XI4Z5AoSgt.jpg
+300,Elio,"[10751, 35, 12, 16, 878]",en,2025-06-18,/ukPu5xYOBAnh5H46uK4aQOirW2b.jpg,/7z8jDiTZZco9moIKpTUImFtTy7o.jpg
+301,Wrath of Man,"[53, 80, 18]",en,2021-04-22,/70AV2Xx5FQYj20labp0EGdbjI6E.jpg,/M7SUK85sKjaStg4TKhlAVyGlz3.jpg
+302,Maintenance,[],en,,,
+303,Morgengrauen,[18],de,1954-09-01,,
+304,Scream,"[80, 27, 9648]",en,1996-12-20,/4w6nQYAY0eb7B0VVRDXilXcgAUV.jpg,/lr9ZIrmuwVmZhpZuTCW8D9g0ZJe.jpg
+305,Weapons,"[27, 9648]",en,2025-08-04,/yKWZIDo4ixcDUeelk2QGVA1EVmC.jpg,/cpf7vsRZ0MYRQcnLWteD5jK9ymT.jpg
+306,The Terminator,"[28, 53, 878]",en,1984-10-26,/ffdqHMWkh1h9MABwIfbfRJhgFW6.jpg,/qvktm0BHcnmDpul4Hz01GIazWPr.jpg
+307,Roofman,"[80, 35, 18]",en,2025-10-08,/2YOnE2qmoyyOUqQsFit12gDSauk.jpg,/wXDFtcnYtevleGzCmAD2ReQnJ4l.jpg
+308,Venom: The Last Dance,"[28, 878, 12]",en,2024-10-22,/3V4kLQg0kSqPLctI5ziYWabAZYF.jpg,/1RaSkWakWBxxYOWRrqmwo2my5zg.jpg
+309,Ankle Biters,[27],en,2003-02-04,,/ffocaVl6gEx6ItAyuEuwX4KltJt.jpg
+310,Fifty Shades of Grey,"[18, 10749, 53]",en,2015-02-11,/7IGKrY1f1KfwMipx9wZC4NRgIdF.jpg,/63kGofUkt1Mx0SIL4XI4Z5AoSgt.jpg
+311,Salvation,"[27, 53]",en,2025-08-19,/xL5eX4090b5TCfKy5wNJdAC0rZz.jpg,/k0ux5SqOmCR7b4MUHJL5vY2jNjf.jpg
+312,Spider-Man: Into the Spider-Verse,"[16, 28, 12, 878]",en,2018-12-06,/8mnXR9rey5uQ08rZAvzojKWbDQS.jpg,/iiZZdoQBEYBv6id8su7ImL0oCbD.jpg
+313,Art Bastard,[99],en,2015-05-20,/f0qmBpM6lz8hiPVgHtDziehI5pm.jpg,/CoN6fd7QXvVE1bNnmh0S9I2VlY.jpg
+314,Laila,"[35, 10749]",te,2025-02-14,/vNUwK5P42m81uG57kKI1WxSZwIQ.jpg,/aFogllaRGlAhk1nqvVGFpZpl4qU.jpg
+315,Ligaw,"[18, 10749]",tl,2025-05-09,/heMsXGykub43tU79I9hv6T1vHRc.jpg,/yc8V3KEnhvPrzXpdYTXdTvjpOb5.jpg
+316,Thunderbolts*,"[28, 878, 12]",en,2025-04-30,/jYCyTdPfgT01IOJWDnnetr9RDX6.jpg,/hqcexYHbiTBfDIdDWxrxPtVndBX.jpg
+317,Fate/kaleid liner Prisma☆Illya 2wei!: Magical Girl in Hot Springs Inn,"[16, 14, 35]",ja,2015-07-25,/70eN3mE1WPex1Tvg6l2UwDc57Zd.jpg,/mxV8YOD0btBX6Nn8qBRswJHmMWi.jpg
+318,Revue pro banjo,[10402],cs,1964-01-04,/xYHwyJhdIgXN4916BoxYr06quiu.jpg,
+319,Alien,"[27, 878]",en,1979-05-25,/cEobq5QrnOJjO6giDs8q4RxmMKh.jpg,/vfrQk5IPloGg1v9Rzbh2Eg3VGyM.jpg
+320,Blade Runner 2049,"[878, 18]",en,2017-10-04,/mVr0UiqyltcfqxbAUcLl9zWL8ah.jpg,/gajva2L0rPYkEWjzgFlBXCAVBE5.jpg
+321,The Green Mile,"[14, 18, 80]",en,1999-12-10,/b6HWTOxn1xevvyHU2K9ICvaRU6g.jpg,/8VG8fDNiy50H4FedGwdSVUPoaJe.jpg
+322,Night Always Comes,"[53, 18, 80]",en,2025-08-15,/cVqQdzqo0ymSFJqU87bIiHV8bA7.jpg,/1jDo1nG7rtjaaQGpr6e73x9i9Xp.jpg
+323,The Ugly Stepsister,"[27, 35, 14, 18]",no,2025-03-07,/ev9kxdoJ5IYVprt1OvH2SMWJdU1.jpg,/rayAREIKtSinuov10GvrZHyXfXH.jpg
+324,Playing with Love,[18],it,1977-05-17,/2AI3pSt5sbAEav6isVDIeCuiZql.jpg,/nu5uj47KSF73VPEiIRYdPLJ96j7.jpg
+325,Coco,"[10751, 16, 10402, 12]",en,2017-10-27,/g7CHF8gTLGooTbP4GznIGwaqAGL.jpg,/6Ryitt95xrO8KXuqRGm1fUuNwqF.jpg
+326,How to Make a Killing,"[35, 53, 18]",en,2026-02-19,/vuaPZ4IbsIRr2wDARZT7rFQ5CgP.jpg,/osBS9rX9Ov9CKTiDsjAuRSqD7Af.jpg
+327,Iron Man 2,"[12, 28, 878]",en,2010-04-28,/7lmBufEG7P7Y1HClYK3gCxYrkgS.jpg,/6WBeq4fCfn7AN0o21W9qNcRF2l9.jpg
+328,Harry Potter and the Chamber of Secrets,"[12, 14]",en,2002-11-13,/1stUIsjawROZxjiCMtqqXqgfZWC.jpg,/sdEOH0992YZ0QSxgXNIGLq1ToUi.jpg
+329,Despicable Me 4,"[10751, 35, 16, 878, 28]",en,2024-06-20,/twsxsfao6ZOVvT8LfudH603MMi6.jpg,/wWba3TaojhK7NdycRhoQpsG0FaH.jpg
+330,Even If This Love Disappears Tonight,"[10749, 18]",ko,2025-12-24,/iL5eGI9ctHdUOV4yG6dyGKctSEX.jpg,/5eNN8KLDPUXDqIkTdCbmn1gx5P7.jpg
+331,M3GAN 2.0,"[28, 878, 53]",en,2025-06-25,/cT9ZfwoPDk8JbgkessmQgxAWiaM.jpg,/oekamLQrwlJjRNmfaBE4llIvkir.jpg
+332,"Monsters, Inc.","[16, 35, 10751]",en,2001-11-01,/sDTnMOJ3H5wI38OxObmCtK7wfd5.jpg,/wFSpyMsp7H0ttERbxY7Trlv8xry.jpg
+333,Avengers: Doomsday,"[878, 28, 12]",en,2026-12-16,/3eOINbgRs8WiWfQfViXeuZ3enrs.jpg,/8HkIe2i4ScpCkcX9SzZ9IPasqWV.jpg
+334,The Bad Guys 2,"[10751, 35, 80, 12, 16]",en,2025-07-24,/8FWLJHuWB72UXBmiMtxwTvQVumN.jpg,/c1msaKf1wyuKcmLjjJd6rIBPFcd.jpg
+335,The Wild Robot,"[16, 878, 10751, 12, 18]",en,2024-09-12,/1pmXyN3sKeYoUhu5VBZiDU4BX21.jpg,/wTnV3PCVW5O92JMrFvvrRcV39RU.jpg
+336,Comet in Moominland,"[16, 35, 14, 12, 10751]",ja,1992-08-08,/WxgHV8OobHqXp91EPEeNirCab4.jpg,/b4O25Joz13gZqXusA5tyqO4Y4OV.jpg
+337,Regretting You,"[10749, 18]",en,2025-10-22,/m3WlBJJRbFPaut1QS0PbOG8Wezy.jpg,/z4gVnxTaks3anTycwKjDmvQSuWt.jpg
+338,Keeper,"[27, 9648]",en,2025-11-12,/4Wxm2eYL7Z1mEQnsuUl9FytIvr8.jpg,/mbGHijUc0C3fcM12l6ro6FgxIvg.jpg
+339,Toy Story 2,"[16, 35, 10751]",en,1999-10-30,/7iUDfakacY1HpajP1DtHrCuDB95.jpg,/yFWQkz2ynjwsazT6xQiIXEUsyuh.jpg
+340,Prometheus,"[878, 12, 9648]",en,2012-05-30,/sM42bpH73dmf3kJrE8xr4kztYqR.jpg,/qsYQflQhOuhDpQ0W2aOcwqgDAeI.jpg
+341,Wicked: For Good,"[14, 12, 10749]",en,2025-11-19,/cGbPBHKSFO7hSIjxkb3KOaGdOep.jpg,/si9tolnefLSUKaqQEGz1bWArOaL.jpg
+342,The Wolf of Wall Street,"[80, 18, 35]",en,2013-12-25,/7Nwnmyzrtd0FkcRyPqmdzTPppQa.jpg,/kW9LmvYHAaS9iA0tHmZVq8hQYoq.jpg
+343,Six Degrees of Separation,"[9648, 18, 35]",en,1993-12-08,/e9L5dpi41k3YkbavwgOGXnQGCe1.jpg,/oH0bl69uZZA6dAclgFRkm1Vwcry.jpg
+344,Kill Bill: Vol. 1,"[28, 80]",en,2003-10-10,/iffzIhuLAO38Po6sh1s6ZEVwlNL.jpg,/v7TaX8kXMXs5yFFGR41guUDNcnB.jpg
+345,Wicked,"[18, 10749, 14]",en,2024-10-16,/fyZ6SDUS4o9jp2EHxfZa3qS9ean.jpg,/xDGbZ0JJ3mYaGKy4Nzd9Kph6M9L.jpg
+346,Our Fault,"[10749, 18]",es,2025-10-15,/srk5NlOnpEsd0hxVFiHfhtQtfDe.jpg,/yzqHt4m1SeY9FbPrfZ0C2Hi9x1s.jpg
+347,Avengers: Age of Ultron,"[28, 12, 878]",en,2015-04-22,/kIBK5SKwgqIIuRKhhWrJn3XkbPq.jpg,/4ssDuvEDkSArWEdyBl2X5EHvYKU.jpg
+348,Big World,"[18, 10751]",zh,2024-12-27,/fK8aA2X9EANs9Bfc5fZ6q9Gj7la.jpg,/rLj287mA1tp4hZmd69umb1rOZu8.jpg
+349,Obsessed,[18],ko,2014-05-14,/iGBbWXmAIgpiWg9Mx2D2gLzbg4n.jpg,/fetCtoAvZShCk1nqAWZFuKZschR.jpg
+350,The Batman,"[80, 9648, 53]",en,2022-03-01,/rvtdN5XkWAfGX6xDuPL6yYS2seK.jpg,/74xTEgt7R36Fpooo50r9T25onhq.jpg
+351,Frozen,"[16, 10751, 12, 14]",en,2013-11-20,/rj58WQ9ImI0mYDptXdM7euX1Wjt.jpg,/kgwjIb2JDHRhNk13lmSxiClFjVk.jpg
+352,Cosmic Princess Kaguya!,"[16, 14, 10402, 878]",ja,2026-01-22,/1jdPUUSy37Wzw3xuc8otI86X2gv.jpg,/9I9cM38gecZcwJ0C6r0cwfvtPJP.jpg
+353,Eyes Wide Shut,"[18, 53, 9648]",en,1999-07-16,/aC6wW62V6b0csr5iUnbOjYAqfhg.jpg,/knEIz1eNGl5MQDbrEAVWA7iRqF9.jpg
+354,Ratatouille,"[16, 35, 10751, 14]",en,2007-06-28,/xgDj56UWyeWQcxQ44f5A3RTWuSs.jpg,/t3vaWRPSf6WjDSamIkKDs1iQWna.jpg
+355,Kissing Is the Easy Part,"[10749, 35]",en,2026-02-13,/7yuHdP85F2ZxhKbSoPgCBT9uJT3.jpg,/gPxlb7LLqbsKgjltgVrgYdhfxCZ.jpg
+356,Up,"[16, 35, 10751, 12]",en,2009-05-28,/hGGC9gKo7CFE3fW07RA587e5kol.jpg,/mFvoEwSfLqbcWwFsDjQebn9bzFe.jpg
+357,The Bride!,"[878, 27, 35]",en,2026-03-04,/pMlCbasyAqBLV18CLEkDm07VKtn.jpg,/vu1cbpWza1F0OSUTqVMlJYcNgC2.jpg
+358,Pirates of the Caribbean: On Stranger Tides,"[12, 28, 14]",en,2011-05-15,/uzIGtyS6bbnJzGsPL93WCF1FWm8.jpg,/keGfSvCmYj7CvdRx36OdVrAEibE.jpg
+359,The Mummy,"[12, 28, 14]",en,1999-04-16,/8zLS8p1tRyWFLRFfmgQq0j5WE6z.jpg,/yhIsVvcUm7QxzLfT6HW2wLf5ajY.jpg
+360,Dave,[35],en,1993-05-07,/lpBqjU3OyG9DnIy5BHt0zNw8n0q.jpg,/wIUuf1NFchdCJe833JBTiSMzqfv.jpg
+361,Altered,"[878, 28]",en,2025-09-18,/q9bvjUkpKltPE0S9oxci2pmD1Zx.jpg,/6QlAcGRaUrgHcZ4WTBh5lsPnzKx.jpg
+362,Harry Potter and the Order of the Phoenix,"[12, 14]",en,2007-07-08,/pkxPkHOPJjOvzfQOclANEBT8OfK.jpg,/5aOyriWkPec0zUDxmHFP9qMmBaj.jpg
+363,Ella McCay,"[35, 18]",en,2025-12-11,/9cd1zsxcOAcBW01WDOWz8EODTS0.jpg,/iQCtK477yqp6xnHHrQG2P0lXoow.jpg
+364,Harry Potter and the Deathly Hallows: Part 2,"[12, 14]",en,2011-07-12,/cbcpDn6XJaIGoOil1bKuskU8ds4.jpg,/c54HpQmuwXjHq2C9wmoACjxoom3.jpg
+365,The Astronaut,"[878, 27, 53]",en,2025-09-26,/3C01kAcKGR6FwsUUSOvJ8N82pqr.jpg,/souvvkJHYhztC1UqZ8lEVUiJa3J.jpg
+366,The Journey,[18],en,2019-04-20,/kb07JMsO4sSed06mPFcrcJuOS7s.jpg,/sE4r24JVPVRfbBqjUz3oqTDPhhh.jpg
+367,High Rollers,"[28, 80, 53]",en,2025-03-14,/me3SisKfnxwBP69aOVKAVMw9vDM.jpg,/hHowAaChDjwueySmwVbsjHmpWa.jpg
+368,The Super Mario Galaxy Movie,"[10751, 14, 35, 12, 16]",en,2026-04-01,/5U0tqruExz7ssDyr5pwiAGFzI8S.jpg,/dQFwdkCpfc5UOdQigYKQm06VJS4.jpg
+369,Toy Story 3,"[16, 10751, 35]",en,2010-06-16,/9w40MpsvyxMdtnwu1R4tPVW8Gmb.jpg,/AbbXspMOwdvwWZgVN0nabZq03Ec.jpg
+370,Nomads,"[18, 14, 53]",en,1986-03-07,/f0aKdbxNRcUX4YrTSN3s06w8fMz.jpg,/rqPl4jsFmBvl2odkYHtUeTqBCjT.jpg
+371,Inside Out,"[16, 10751, 12, 18, 35]",en,2015-06-17,/jJKZaTBNenlFclQyjrnvzkRmvWE.jpg,/2H1TmgdfNtsKlU9jKdeNyYL5y8T.jpg
+372,Guardians of the Galaxy Vol. 3,"[878, 12, 28]",en,2023-05-03,/hoVj2lYW3i7oMd1o7bPQRZd1lk1.jpg,/r2J02Z2OpNTctfOSN1Ydgii51I3.jpg
+373,Toy Story 4,"[10751, 35, 16, 12]",en,2019-06-19,/v9Ph99EwFXGiQrZxmBlCU9xERST.jpg,/w9kR8qbmQ01HwnvK4alvnQ2ca0L.jpg
+374,Ghost Train,"[27, 9648]",ko,2025-07-09,/3oHIkNt8dM6gH4IDKG5W121OT2T.jpg,/rOTXYy5ScOHdaC2YMQowVwQex5s.jpg
+375,Gone Girl,"[9648, 53, 18]",en,2014-10-01,/iWak7wT0j6ycCc8lKr4NBz9c7n5.jpg,/ts996lKsxvjkO2yiYG0ht4qAicO.jpg
+376,Harry Potter and the Half-Blood Prince,"[12, 14]",en,2009-07-15,/ze6Mx4QE5mQVXRYmG2flncqqle4.jpg,/z7uo9zmQdQwU5ZJHFpv2Upl30i1.jpg
+377,Shutter Island,"[18, 53, 9648]",en,2010-02-14,/8xt8AMb1OKC63AdhNSaYBWxB4Iq.jpg,/nrmXQ0zcZUL8jFLrakWc90IR8z9.jpg
+378,Wonder Woman,"[28, 12, 14]",en,2017-05-30,/AaABt75ZzfMGrscUR2seabz4PEX.jpg,/v4ncgZjG2Zu8ZW5al1vIZTsSjqX.jpg
+379,Finding Nemo,"[16, 10751]",en,2003-05-30,/eCynaAOgYYiw5yN5lBwz3IxqvaW.jpg,/eHuGQ10FUzK1mdOY69wF5pGgEf5.jpg
+380,Schindler's List,"[18, 36, 10752]",en,1993-12-15,/zb6fM1CX41D9rF9hdgclu0peUmy.jpg,/sF1U4EUQS8YHUYjNl3pMGNIQyr0.jpg
+381,The Dark Knight Rises,"[28, 80, 18, 53]",en,2012-07-17,/y2DB71C4nyIdMrANijz8mzvQtk6.jpg,/hr0L2aueqlP2BYUblTTjmtn0hw4.jpg
+382,Gladiator,"[28, 18, 12]",en,2000-05-04,/jhk6D8pim3yaByu1801kMoxXFaX.jpg,/ty8TGRuvJLPUmAR1H1nRIsgwvim.jpg
+383,Twilight,"[14, 18, 10749]",en,2008-11-20,/weAYfu6FfrNxEDJ3xH1XpgQcqUv.jpg,/3Gkb6jm6962ADUPaCBqzz9CTbn9.jpg
+384,Harry Potter and the Deathly Hallows: Part 1,"[12, 14]",en,2010-11-17,/AqLcLsGGTzAjm3pCCq0CZCQrp6m.jpg,/iGoXIpQb7Pot00EEdwpwPajheZ5.jpg
+385,Zombie Dog,[],en,2004-04-01,,
+386,Terminator 2: Judgment Day,"[28, 53, 878]",en,1991-07-03,/xKb6mtdfI5Qsggc44Hr9CCUDvaj.jpg,/jFTVD4XoWQTcg7wdyJKa8PEds5q.jpg
+387,John Wick: Chapter 4,"[28, 53, 80]",en,2023-03-22,/7I6VUdPj6tQECNHdviJkUHD2u89.jpg,/vZloFAK7NmvMGKE7VkF5UHaz0I.jpg
+388,A Serbian Film,"[80, 27, 53]",sr,2010-01-06,/o0x4LOW8qzVNyqwWGMuFa3kE7Hs.jpg,/cToUzXZ9AcUylfIt8vnXhiy6Y9m.jpg
+389,Song Sung Blue,"[10402, 10749, 18]",en,2025-12-25,/wLauNnJYmvVLN0MiOv0tjdiPs0J.jpg,/kQzDdxI0F5z16qo2vzDoqdVMl4O.jpg
+390,Arrival,"[18, 878, 9648]",en,2016-11-10,/r8FD6CC3GgjWaGVkZh00AcedfpA.jpg,/x2FJsf1ElAgr63Y3PNPtJrcmpoe.jpg
+391,The Martian,"[18, 12, 878]",en,2015-09-30,/sq8oUjbBvKkqv9h0Ns5rQbbquhZ.jpg,/3ndAx3weG6KDkJIRMCi5vXX6Dyb.jpg
+392,Whiplash,"[18, 10402]",en,2014-10-10,/1kuYEvLkX2nTkbfzN6X0w0xQFQU.jpg,/7fn624j5lj3xTme2SgiLCeuedmO.jpg
+393,Sidelined: The QB and Me,"[35, 10749]",en,2025-02-06,/wbDkvShcrveXNFsgyujY4kdurVa.jpg,/mSL6truNrWP1Bn9ng1rN0SkMI4f.jpg
+394,The Rule of Jenny Pen,"[27, 53]",en,2025-03-07,/eftVUg9R1lys3wT8kHJqMaK64m7.jpg,/5vqK1wbrgmUvqHn6yPt9b6qT9iL.jpg
+395,Knives Out,"[35, 80, 9648]",en,2019-11-27,/4HWAQu28e2yaWrtupFPGFkdNU7V.jpg,/pThyQovXQrw2m0s9x82twj48Jq4.jpg
+396,Spider-Man: Far From Home,"[28, 12, 878]",en,2019-06-28,/34jW8LvjRplM8Pv06cBFDpLlenR.jpg,/4q2NNj4S5dG2RLF9CpXsej7yXl.jpg
+397,Coraline,"[16, 10751, 14]",en,2009-02-05,/hofnlIyF6bePkgQOpcuRWLvzf15.jpg,/4jeFXQYytChdZYE9JYO7Un87IlW.jpg
+398,Furious Attack,"[28, 80, 53]",zh,2026-02-12,/zBMXbCIeRRflY4BjiKOrfF1phTH.jpg,/4mTK8drt1EWo1AzqBrV4mJA04Wh.jpg
+399,WALL·E,"[16, 10751, 878]",en,2008-06-22,/fK5ssgvtI43z19FoWigdlqgpLRE.jpg,/hbhFnRzzg6ZDmm8YAmxBnQpQIPh.jpg
