@@ -6,29 +6,32 @@ from sklearn.metrics.pairwise import cosine_similarity
 import os
 
 class MovieRecommender:
-  def __init__(self, genres, release_year, runtime, vote_average, language):
+  def __init__(self, genres, release_year, runtime, vote_average, language,adult=0):
       self.genres = genres
       self.release_year = release_year
       self.runtime = runtime
       self.vote_average = vote_average
       self.language = language
-
+      self.adult = adult
       BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-      data_path = os.path.join(BASE_DIR, "..", "processed_data", "movie_data.csv")
+      data_path = os.path.join(BASE_DIR, "..", "..", "data", "movie_data.csv")
 
       self.movie_data = pd.read_csv(data_path)
-      self.language_data = pd.read_csv(os.path.join(BASE_DIR, "..", "processed_data", "language_codes.csv"))
+      self.language_data = pd.read_csv(os.path.join(BASE_DIR, "..","..","data", "language_codes.csv"))
 
-      self.movie_titles = pd.read_csv(os.path.join(BASE_DIR, "..", "processed_data", "movie_titles.csv"))
+      self.genre_data = pd.read_csv(os.path.join(BASE_DIR, "..","..","data", "movie_genres.csv"))
 
-      self.mlb = joblib.load(os.path.join(BASE_DIR, 'model_files','mlb.joblib'))
-      self.preprocessor = joblib.load(os.path.join(BASE_DIR, 'model_files','preprocessor.joblib'))
+      self.movie_titles = pd.read_csv(os.path.join(BASE_DIR, "..","..","data", "movie_titles.csv"))
+
+      self.mlb = joblib.load(os.path.join(BASE_DIR,"..","..","data","scalers","mlb.joblib"))
+      self.preprocessor = joblib.load(os.path.join(BASE_DIR,"..","..","data","scalers","preprocessor.joblib"))
 
 
   def recommend_movies(self):
-    encoded_genres = self.mlb.fit_transform(self.movie_data.pop("Genres").apply(lambda x: eval(x) if pd.notnull(x) else []))
-    preprocessed_data = self.preprocessor.fit_transform(self.movie_data)
+    genres = self.genre_data["Genres"].apply(lambda x: eval(x) if pd.notnull(x) else [])
+    encoded_genres = self.mlb.transform(genres)
+    preprocessed_data = self.preprocessor.transform(self.movie_data[["Runtime", "Vote_average", "Adult"]])
 
     if hasattr(preprocessed_data, "toarray"):
         preprocessed_data = preprocessed_data.toarray()
@@ -39,11 +42,9 @@ class MovieRecommender:
     language_code = self.language_data[self.language_data["Language_name"] == self.language.lower()]["Language_code"].values
 
     user_input = pd.DataFrame({
-        "Release_year": [self.release_year],
         "Runtime": [self.runtime],
         "Vote_average": [self.vote_average],
-        "Language": language_code if len(language_code) > 0 else ["Unknown"],
-        "Adult": [0],
+        "Adult": [self.adult],
     })
     user_preprocessed = self.preprocessor.transform(user_input)
 
@@ -51,7 +52,10 @@ class MovieRecommender:
         user_preprocessed = user_preprocessed.toarray()
     user_final = np.hstack((user_preprocessed, genres_encoded))
 
-    filtered_indices = self.movie_data[self.movie_data["Release_year"] == self.release_year].index
+    filtered_indices = self.movie_data[
+        (self.movie_data["Release_year"] == self.release_year) &
+        (self.movie_data["Language"] == language_code[0] if len(language_code) > 0 else "Unknown")
+    ].index
     filtered_final_data = final_data[filtered_indices]
 
     similarities = cosine_similarity(user_final, filtered_final_data)
@@ -61,9 +65,7 @@ class MovieRecommender:
     movie_list = []
     for idx in top5_idx:
         movie_list.append({
-            "Movie_id": self.movie_titles.iloc[idx]['Movie_id'],
-            "Title": self.movie_titles.iloc[idx]['Title'],
+            "Movie_id": self.movie_titles.iloc[idx]['Movie_id'].item(),
         })
 
     return movie_list
-  

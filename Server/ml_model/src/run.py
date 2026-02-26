@@ -1,4 +1,4 @@
-from movie_recommend import *
+from Server.models.movie_recommend import *
 
 if __name__ == "__main__":
     genres = ["Action", "Adventure"]
