@@ -210,3 +210,32 @@ def search_movies(query: str, limit: int = 10):
             })
 
     return movies
+
+def get_movie_cast(movie_id: int, limit: int = 5):
+    url = f"{TMDB_BASE_URL}movie/{movie_id}/credits"
+    
+    params = {
+        "api_key": TMDB_API_KEY,
+        "language": "en-US"
+    }
+
+    response = requests.get(url, params=params)
+
+    if response.status_code != 200:
+        return []
+
+    data = response.json()
+    cast_list = data.get("cast", [])
+
+    cast = []
+    for member in cast_list[:limit]:
+        cast.append({
+            "cast_id": member.get("id"),
+            "name": member.get("name"),
+            "character": member.get("character"),
+            "profile_path": member.get("profile_path"),
+            "known_for_department": member.get("known_for_department"),
+            "popularity": member.get("popularity")
+        })
+
+    return cast

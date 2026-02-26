@@ -1,7 +1,6 @@
 from fastapi import APIRouter, Query
-from app.models.schemas import MovieRequest, MovieResponse, MovieCardDetails, MovieDetails
+from app.models.schemas import MovieRequest, MovieResponse, MovieCardDetails, MovieDetails, CastDetails
 from app.models.movie_model import MovieRecommender
-import requests
 from dotenv import load_dotenv
 import os
 from typing import List, Optional 
@@ -82,7 +81,7 @@ def search_movies(query: str, limit: int = Query(10, ge=1, le=100)):
 
     return search_movies(query=query, limit=limit)
 
-@router.get("/discover/{movie_id}", response_model=MovieDetails)
+@router.get("/{movie_id}", response_model=MovieDetails)
 def get_movie_details(movie_id: int):
     from app.utils.movies import get_model_movie_details
 
@@ -91,3 +90,10 @@ def get_movie_details(movie_id: int):
         return details
     else:
         return None
+
+@router.get("/{movie_id}/cast", response_model=List[CastDetails])
+def get_movie_cast(movie_id: int):
+    from app.utils.movies import get_movie_cast
+
+    cast = get_movie_cast(movie_id)
+    return cast

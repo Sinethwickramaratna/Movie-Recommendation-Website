@@ -45,3 +45,14 @@ class LanguageDetails(BaseModel):
 
 class LanguageResponse(BaseModel):
     languages: List[LanguageDetails]
+
+class CastDetails(BaseModel):
+    cast_id: int
+    name: str
+    character: str
+    profile_path: Optional[str]
+    known_for_department: Optional[str]
+    popularity: Optional[float]
+
+class CastResponse(BaseModel):
+    cast: List[CastDetails]
