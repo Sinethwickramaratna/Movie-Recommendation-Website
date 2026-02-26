@@ -8,6 +8,7 @@ import math
 
 load_dotenv()
 TMDB_API_KEY = os.getenv("TMDB_API_KEY")
+TMDB_BASE_URL = os.getenv("TMDB_BASE_URL")
 
 BASE_PATH = os.path.dirname(os.path.abspath(__file__))
 csv_path = os.path.join(BASE_PATH, "../../data/genres_details.csv")
@@ -17,7 +18,7 @@ language_path = os.path.join(BASE_PATH, "../../data/language_codes.csv")
 language_details = pd.read_csv(language_path)
 
 def get_model_movie_details(movie_id: int):
-    url = f"https://api.themoviedb.org/3/movie/{movie_id}"
+    url = f"{TMDB_BASE_URL}movie/{movie_id}"
     params = {
         "api_key": TMDB_API_KEY,
         "language": "en-US"
@@ -50,7 +51,7 @@ def get_model_movie_details(movie_id: int):
         return None
 
 def get_trending_movies():
-    url = f"https://api.themoviedb.org/3/trending/movie/week"
+    url = f"{TMDB_BASE_URL}trending/movie/week"
     params = {
         "api_key": TMDB_API_KEY,
         "language": "en-US"
@@ -91,7 +92,7 @@ def get_filtered_movies(
     language: Optional[str] = None,
     limit: int = 10
 ):
-    url = "https://api.themoviedb.org/3/discover/movie"
+    url = f"{TMDB_BASE_URL}discover/movie"
 
     movies = []
     page = 1
@@ -163,7 +164,7 @@ def get_filtered_movies(
     return movies[:limit]
 
 def search_movies(query: str, limit: int = 10):
-    url = "https://api.themoviedb.org/3/search/movie"
+    url = f"{TMDB_BASE_URL}search/movie"
 
     movies = []
     page_number = math.ceil(limit / 20)

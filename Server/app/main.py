@@ -7,7 +7,7 @@ app.include_router(movies.router, prefix="/movies", tags=["Movies"])
 app.include_router(categories.router, prefix="/categories", tags=["Categories"])
 app.include_router(languages.router, prefix="/languages", tags=["Languages"])
 
-@app.get("/")
+@app.get("/api")
 def root():
   return {"message": "Welcome to the Movie Recommender API! Use the /movies/recommend endpoint to get movie recommendations based on your preferences."}
 
