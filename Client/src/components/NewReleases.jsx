@@ -1,16 +1,21 @@
 import React, { useState, useEffect } from 'react';
+import { addToWatchlist, isInWatchlist } from '../utils/watchlist';
+import { Link } from 'react-router-dom';
+import Toast from '../components/Toast';
 
 
 export default function NewReleases() {
     const [movies, setMovies] = useState([]);
     const [loading, setLoading] = useState(true);
+    const [watchlistSet, setWatchlistSet] = useState(new Set());
+    const [toast, setToast] = useState({ message: '', type: '' });
 
     const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
     const IMAGE_BASE_URL = import.meta.env.VITE_TMDB_IMAGE_BASE_URL;
 
     useEffect(() => {
         setLoading(true);
-        fetch(`${API_BASE_URL}/movies/new_releases`)
+        fetch(`${API_BASE_URL}/movies/new_releases?limit=10`)
             .then(res => {
                 if (!res.ok) throw new Error('Network error');
                 return res.json();
@@ -18,6 +23,15 @@ export default function NewReleases() {
             .then(data => {
                 if (data && data.length > 0) {
                     setMovies(data);
+
+                    const newWatchlistSet = new Set();
+                    data.forEach(movie => {
+                        const mId = movie.movie_id || movie.id;
+                        if (isInWatchlist(mId)) {
+                            newWatchlistSet.add(mId);
+                        }
+                    });
+                    setWatchlistSet(newWatchlistSet);
                 }
             })
             .catch(err => {
@@ -28,12 +42,13 @@ export default function NewReleases() {
 
     return (
         <section className="px-6 pb-20 md:px-10 bg-surface-dark/30 pt-12">
+            <Toast message={toast.message} type={toast.type} onClose={() => setToast({ message: '', type: '' })} />
             <div className="flex items-center justify-between mb-8">
                 <h2 className="text-2xl font-bold tracking-tight text-white md:text-3xl flex items-center gap-3">
                     <span className="h-8 w-1.5 rounded-full bg-secondary"></span>
                     New Releases
                 </h2>
-                <a className="text-sm font-medium text-primary hover:text-white transition-colors" href="#">View All</a>
+                <Link to="/movies" className="text-sm font-medium text-primary hover:text-white transition-colors">View All</Link>
             </div>
 
             {loading ? (
@@ -57,18 +72,47 @@ export default function NewReleases() {
                                     onError={(e) => { e.target.src = 'https://via.placeholder.com/280x420/162a2d/0de3f2?text=No+Image' }}
                                 />
                                 <div className="absolute inset-0 flex flex-col items-center justify-center gap-3 bg-background-dark/80 opacity-0 backdrop-blur-sm transition-opacity duration-300 group-hover:opacity-100">
-                                    <button className="flex size-12 items-center justify-center rounded-full bg-primary text-background-dark hover:scale-110 transition-transform">
+                                    <Link to={`/movie/${movie.movie_id || movie.id}`} className="flex size-12 items-center justify-center rounded-full bg-primary text-background-dark hover:scale-110 transition-transform">
                                         <span className="material-symbols-outlined fill-current">play_arrow</span>
-                                    </button>
-                                    <button className="flex items-center gap-1 rounded-full bg-secondary px-4 py-1.5 text-xs font-bold text-white hover:bg-secondary/80 transition-colors">
-                                        <span className="material-symbols-outlined text-sm">add</span> Watchlist
-                                    </button>
+                                    </Link>
+                                    {(() => {
+                                        const mId = movie.movie_id || movie.id;
+                                        const inWatchlist = watchlistSet.has(mId);
+                                        return (
+                                            <button
+                                                onClick={() => {
+                                                    if (inWatchlist) {
+                                                        setToast({ message: `${movie.title} is already in your Watchlist.`, type: 'error' });
+                                                        return;
+                                                    }
+                                                    const success = addToWatchlist(mId);
+                                                    if (success) {
+                                                        setWatchlistSet(new Set(watchlistSet).add(mId));
+                                                        setToast({ message: `Added ${movie.title} to Watchlist!`, type: 'success' });
+                                                    }
+                                                }}
+                                                className={`flex items-center gap-1 rounded-full px-4 py-1.5 text-xs font-bold transition-all duration-300 group/watch ${inWatchlist ? "bg-emerald-500/20 border border-emerald-500/50 text-emerald-400 cursor-pointer hover:bg-emerald-500/30" : "bg-surface-dark border border-white/20 text-white hover:bg-primary/30 hover:text-primary hover:border-primary hover:neon-glow hover:scale-110 active:scale-95"}`}
+                                            >
+                                                {inWatchlist ? (
+                                                    <>
+                                                        <span className="material-symbols-outlined text-sm">check</span> Added
+                                                    </>
+                                                ) : (
+                                                    <>
+                                                        <span className="material-symbols-outlined text-sm transition-transform duration-300 group-hover/watch:rotate-90">add</span> Watchlist
+                                                    </>
+                                                )}
+                                            </button>
+                                        )
+                                    })()}
                                 </div>
                             </div>
                             <div>
-                                <h3 className="truncate text-base font-bold text-white transition-colors group-hover:text-primary" title={movie.title}>
-                                    {movie.title}
-                                </h3>
+                                <Link to={`/movie/${movie.movie_id || movie.id}`}>
+                                    <h3 className="truncate text-base font-bold text-white transition-colors group-hover:text-primary" title={movie.title}>
+                                        {movie.title}
+                                    </h3>
+                                </Link>
                                 <div className="flex items-center gap-2 text-xs text-slate-400 mt-1 flex-wrap">
                                     <span>{movie.genres?.[0] || 'Movie'}</span>
                                     {movie.release_date && (

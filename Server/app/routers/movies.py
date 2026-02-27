@@ -57,12 +57,13 @@ def get_trending_movies():
 
 @router.get("/new_releases", response_model=List[MovieCardDetails])
 def filtered_movies(
-    genres: Optional[List[int]] = Query(None),
+    genres: Optional[List[str]] = Query(None),
     release_year: Optional[int] = Query(None, ge=1900),
     min_vote: Optional[float] = Query(None, ge=0, le=10),
-    latest: bool = Query(True),
+    sort_by: Optional[str] = Query("Latest"),
     language: Optional[str] = Query(None),
-    limit: int = Query(10, ge=1, le=100)
+    limit: int = Query(20, ge=1, le=100),
+    page: int = Query(1, ge=1)
 ):
     from app.utils.movies import get_filtered_movies
 
@@ -70,16 +71,17 @@ def filtered_movies(
         genres=genres,
         release_year=release_year,
         min_vote=min_vote,
-        latest=latest,
+        sort_by=sort_by,
         language=language,
-        limit=limit
+        limit=limit,
+        page=page
     )
 
 @router.get("/search", response_model=List[MovieCardDetails])
-def search_movies(query: str, limit: int = Query(10, ge=1, le=100)):
+def search_movies(query: str, limit: int = Query(10, ge=1, le=100), page: int = Query(1, ge=1)):
     from app.utils.movies import search_movies
 
-    return search_movies(query=query, limit=limit)
+    return search_movies(query=query, limit=limit, page=page)
 
 @router.get("/{movie_id}", response_model=MovieDetails)
 def get_movie_details(movie_id: int):

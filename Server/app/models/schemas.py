@@ -19,6 +19,7 @@ class MovieDetails(BaseModel):
     release_date: str
     runtime: int
     vote_average: float
+    vote_count: Optional[int] = 0
     language: Optional[str]
 
 class MovieResponse(BaseModel):

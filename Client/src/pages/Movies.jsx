@@ -1,8 +1,13 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import { addToWatchlist, isInWatchlist } from '../utils/watchlist';
+import Toast from '../components/Toast';
 
 export default function Movies() {
+    const location = useLocation();
+    const searchQuery = new URLSearchParams(location.search).get('search');
     const [minRating, setMinRating] = useState(0);
     const [genres, setGenres] = useState([]);
     const [selectedGenres, setSelectedGenres] = useState([]);
@@ -10,13 +15,17 @@ export default function Movies() {
     const [languages, setLanguages] = useState([]);
     const [selectedLanguage, setSelectedLanguage] = useState('');
     const [selectedYear, setSelectedYear] = useState('');
+    const [isYearOpen, setIsYearOpen] = useState(false);
     const [sortBy, setSortBy] = useState('Latest');
     const [movies, setMovies] = useState([]);
     const [loadingMovies, setLoadingMovies] = useState(true);
-    const [limit, setLimit] = useState(20);
+    const [page, setPage] = useState(1);
     const [hasMore, setHasMore] = useState(true);
+    const [watchlistSet, setWatchlistSet] = useState(new Set());
+    const [toast, setToast] = useState({ message: '', type: '' });
 
     const genreDropdownRef = useRef(null);
+    const yearDropdownRef = useRef(null);
 
     const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
     const IMAGE_BASE_URL = import.meta.env.VITE_TMDB_IMAGE_BASE_URL;
@@ -25,6 +34,9 @@ export default function Movies() {
         const handleClickOutside = (event) => {
             if (genreDropdownRef.current && !genreDropdownRef.current.contains(event.target)) {
                 setIsGenreOpen(false);
+            }
+            if (yearDropdownRef.current && !yearDropdownRef.current.contains(event.target)) {
+                setIsYearOpen(false);
             }
         };
         document.addEventListener('mousedown', handleClickOutside);
@@ -64,16 +76,17 @@ export default function Movies() {
         fetchLanguages();
     }, []);
 
+    // Reset pagination and list when filters or search query change
     useEffect(() => {
-        // Reset limit to 20 whenever any filter changes
-        setLimit(20);
+        setPage(1);
+        setMovies([]);
         setHasMore(true);
-    }, [selectedGenres, selectedYear, minRating, selectedLanguage, sortBy]);
+    }, [minRating, selectedGenres, selectedYear, sortBy, selectedLanguage, searchQuery]);
 
     useEffect(() => {
         const fetchMovies = async () => {
-            // Only show main loading state if it is the first batch
-            if (limit === 20) setLoadingMovies(true);
+            // Only show main loading state if it is the first page
+            if (page === 1) setLoadingMovies(true);
             try {
                 // Build query string
                 const params = new URLSearchParams();
@@ -83,16 +96,7 @@ export default function Movies() {
                 }
 
                 if (selectedYear && selectedYear !== 'All Years') {
-                    if (selectedYear.includes('-')) {
-                        // Handling ranges like 2020-2024 is tricky with a single release_year param depending on backend support. 
-                        // Assuming the backend accepts an exact year or we just pass the start year for now.
-                        params.append('release_year', selectedYear.split('-')[0]);
-                    } else if (selectedYear.includes('s')) {
-                        // e.g., 2010s
-                        params.append('release_year', selectedYear.replace('s', '0'));
-                    } else {
-                        params.append('release_year', selectedYear);
-                    }
+                    params.append('release_year', selectedYear);
                 }
 
                 if (minRating > 0) {
@@ -104,27 +108,53 @@ export default function Movies() {
                 }
 
                 // Sorting
-                if (sortBy === 'Latest') {
-                    params.append('latest', 'true');
-                } else {
-                    params.append('latest', 'false');
-                    // Note: Other sorts like 'Top Rated', 'Popularity', 'A-Z' might need a different URL param if backend supports it.
+                if (sortBy) {
+                    params.append('sort_by', sortBy);
                 }
 
-                params.append('limit', limit.toString());
+                params.append('limit', '20');
+                params.append('page', page.toString());
 
-                const response = await fetch(`${API_BASE_URL}/movies/new_releases?${params.toString()}`);
+                let fetchUrl = `${API_BASE_URL}/movies/new_releases?${params.toString()}`;
+
+                if (searchQuery) {
+                    fetchUrl = `${API_BASE_URL}/movies/search?query=${encodeURIComponent(searchQuery)}&limit=20&page=${page}`;
+                }
+
+                const response = await fetch(fetchUrl);
                 if (response.ok) {
                     const data = await response.json();
 
-                    if (data.length < limit) {
+                    if (data.length < 20) {
                         setHasMore(false); // If we get fewer items than we asked for, there's no more
                     } else {
                         setHasMore(true);
                     }
 
-                    // Since we're increasing the limit, the API returns the full set including the ones we already had
-                    setMovies(data);
+                    if (page === 1) {
+                        setMovies(data);
+                    } else {
+                        setMovies(prevMovies => {
+                            // Filter out any potential duplicates by evaluating id or title 
+                            const newMovies = data.filter(apiMovie =>
+                                !prevMovies.some(existingMovie =>
+                                    (existingMovie.id && existingMovie.id === apiMovie.id) ||
+                                    (existingMovie.title && existingMovie.title === apiMovie.title)
+                                )
+                            );
+                            return [...prevMovies, ...newMovies];
+                        });
+                    }
+
+                    // Pre-calculate watchlist status for performance
+                    const newWatchlistSet = new Set(watchlistSet);
+                    data.forEach(movie => {
+                        const mId = movie.movie_id || movie.id;
+                        if (isInWatchlist(mId)) {
+                            newWatchlistSet.add(mId);
+                        }
+                    });
+                    setWatchlistSet(newWatchlistSet);
                 } else {
                     console.error('Failed to fetch movies');
                 }
@@ -135,13 +165,14 @@ export default function Movies() {
             }
         };
 
-        if (hasMore || limit === 20) {
+        if (hasMore || page === 1) {
             fetchMovies();
         }
-    }, [selectedGenres, selectedYear, minRating, selectedLanguage, sortBy, limit]);
+    }, [selectedGenres, selectedYear, minRating, selectedLanguage, sortBy, page, searchQuery]);
 
     return (
         <div className="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 min-h-screen flex flex-col antialiased selection:bg-primary selection:text-background-dark">
+            <Toast message={toast.message} type={toast.type} onClose={() => setToast({ message: '', type: '' })} />
             <div className="relative flex min-h-screen w-full flex-col overflow-x-hidden">
                 <Header />
 
@@ -152,8 +183,15 @@ export default function Movies() {
                             <div className="absolute -right-20 -top-20 w-64 h-64 bg-primary/20 blur-[100px] rounded-full"></div>
                             <div className="absolute -left-20 -bottom-20 w-64 h-64 bg-accent/10 blur-[100px] rounded-full"></div>
                             <div className="relative z-10">
-                                <h2 className="text-5xl font-black mb-4 tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-slate-100 to-primary">New Releases</h2>
-                                <p className="text-lg text-primary/70 max-w-2xl">The latest cinematic masterpieces, freshly added to our collection. Experience stories that redefine the silver screen.</p>
+                                <h2 className="text-5xl font-black mb-4 tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-slate-100 to-primary">
+                                    {searchQuery ? `Search Results: "${searchQuery}"` : 'New Releases'}
+                                </h2>
+                                <p className="text-lg text-primary/70 max-w-2xl">
+                                    {searchQuery
+                                        ? 'Showing top matches from our curated database.'
+                                        : 'The latest cinematic masterpieces, freshly added to our collection. Experience stories that redefine the silver screen.'
+                                    }
+                                </p>
                             </div>
                         </div>
                     </header>
@@ -218,21 +256,48 @@ export default function Movies() {
                                 {/* Year Filter */}
                                 <div className="flex flex-col gap-2">
                                     <label className="text-xs font-bold uppercase tracking-wider text-primary/60 px-1">Release Year</label>
-                                    <div className="relative">
-                                        <select
-                                            value={selectedYear}
-                                            onChange={(e) => setSelectedYear(e.target.value)}
-                                            className="w-full bg-primary/5 border border-primary/20 rounded-lg py-2.5 px-4 focus:ring-2 focus:ring-primary/50 focus:border-primary outline-none text-sm text-slate-100 appearance-none cursor-pointer"
+                                    <div className="relative" ref={yearDropdownRef}>
+                                        <div
+                                            onClick={() => setIsYearOpen(!isYearOpen)}
+                                            className="w-full bg-primary/5 border border-primary/20 rounded-lg py-2.5 px-4 focus:ring-2 focus:ring-primary/50 focus:border-primary outline-none text-sm text-slate-100 cursor-pointer flex justify-between items-center transition-all bg-background-dark/50"
                                         >
-                                            <option value="" className="bg-background-dark">All Years</option>
-                                            <option value="2026" className="bg-background-dark">2026</option>
-                                            <option value="2025" className="bg-background-dark">2025</option>
-                                            <option value="2020-2024" className="bg-background-dark">2020-2024</option>
-                                            <option value="2010s" className="bg-background-dark">2010s</option>
-                                            <option value="2000s" className="bg-background-dark">2000s</option>
-                                            <option value="1900-1999" className="bg-background-dark">1900-1999</option>
-                                        </select>
-                                        <span className="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-primary/60 pointer-events-none">calendar_month</span>
+                                            <span className="truncate pr-4 text-slate-300">
+                                                {selectedYear ? selectedYear : 'All Years'}
+                                            </span>
+                                            <span className="material-symbols-outlined text-primary/60 pointer-events-none transition-transform duration-200" style={{ transform: isYearOpen ? 'rotate(180deg)' : 'rotate(0deg)' }}>expand_more</span>
+                                        </div>
+
+                                        {isYearOpen && (
+                                            <div className="absolute top-full left-0 mt-2 w-full bg-background-dark border border-primary/20 rounded-lg shadow-xl z-50 max-h-60 overflow-y-auto py-2 backdrop-blur-xl">
+                                                <div
+                                                    className={`px-4 py-2 cursor-pointer transition-colors hover:bg-primary/20 flex items-center justify-between ${!selectedYear ? 'text-primary bg-primary/10' : 'text-slate-300'}`}
+                                                    onClick={() => { setSelectedYear(''); setIsYearOpen(false); }}
+                                                >
+                                                    <span>All Years</span>
+                                                    {!selectedYear && <span className="material-symbols-outlined text-sm">check</span>}
+                                                </div>
+                                                {Array.from({ length: 2026 - 1900 + 1 }, (_, i) => 2026 - i).map(year => {
+                                                    const yearStr = year.toString();
+                                                    const isSelected = selectedYear === yearStr;
+                                                    return (
+                                                        <div
+                                                            key={yearStr}
+                                                            className={`px-4 py-2 cursor-pointer transition-colors hover:bg-primary/20 flex items-center justify-between ${isSelected ? 'text-primary bg-primary/5' : 'text-slate-300'}`}
+                                                            onClick={(e) => {
+                                                                e.stopPropagation();
+                                                                setSelectedYear(yearStr);
+                                                                setIsYearOpen(false);
+                                                            }}
+                                                        >
+                                                            <span>{yearStr}</span>
+                                                            <div className={`w-4 h-4 rounded border flex items-center justify-center transition-colors ${isSelected ? 'border-primary bg-primary/20 text-primary' : 'border-slate-500'}`}>
+                                                                {isSelected && <span className="material-symbols-outlined text-[10px] font-bold">check</span>}
+                                                            </div>
+                                                        </div>
+                                                    );
+                                                })}
+                                            </div>
+                                        )}
                                     </div>
                                 </div>
 
@@ -308,6 +373,12 @@ export default function Movies() {
                             </div>
                         ) : movies.length === 0 ? (
                             <div className="flex flex-col w-full items-center justify-center p-20 text-slate-400 gap-4">
+                                <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 relative z-30 mb-8 pt-4">
+                                    <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold font-display text-white tracking-tight flex items-center gap-4">
+                                        <span className="h-10 w-2 rounded-full bg-primary block"></span>
+                                        {searchQuery ? `Search Results: "${searchQuery}"` : 'Explore Movies'}
+                                    </h1>
+                                </div>
                                 <span className="material-symbols-outlined text-6xl opacity-50">movie_off</span>
                                 <span className="text-xl">No movies found matching your filters.</span>
                                 <button
@@ -327,7 +398,7 @@ export default function Movies() {
                             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
                                 {movies.map((movie) => (
                                     <div key={movie.id || movie.title} className="movie-card group flex flex-col glass rounded-xl overflow-hidden transition-all duration-300 border border-transparent">
-                                        <div className="relative aspect-[2/3] overflow-hidden">
+                                        <Link to={`/movie/${movie.movie_id || movie.id}`} className="relative aspect-[2/3] overflow-hidden block">
                                             <div
                                                 className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105"
                                                 style={{ backgroundImage: `url('${movie.poster_path?.startsWith('http') ? movie.poster_path : `${IMAGE_BASE_URL}${movie.poster_path}`}')` }}
@@ -339,18 +410,48 @@ export default function Movies() {
                                                     <span className="text-xs font-bold text-slate-100">{Number(movie.vote_average).toFixed(1)}</span>
                                                 </div>
                                             )}
-                                        </div>
+                                        </Link>
                                         <div className="p-5 flex flex-col flex-grow">
-                                            <h3 className="text-lg font-bold text-slate-100 mb-1 group-hover:text-primary transition-colors line-clamp-1" title={movie.title}>{movie.title}</h3>
+                                            <Link to={`/movie/${movie.movie_id || movie.id}`} className="block">
+                                                <h3 className="text-lg font-bold text-slate-100 mb-1 group-hover:text-primary transition-colors line-clamp-1" title={movie.title}>{movie.title}</h3>
+                                            </Link>
                                             <p className="text-sm text-primary/60 mb-4 line-clamp-1">
                                                 {movie.release_date && (new Date(movie.release_date).getFullYear() || movie.release_date.substring(0, 4))}
                                                 {movie.language && ` • ${movie.language.charAt(0).toUpperCase() + movie.language.slice(1)}`}
                                                 {movie.genres && movie.genres.length > 0 && ` • ${movie.genres[0]}`}
                                             </p>
-                                            <button className="mt-auto w-full bg-accent text-white py-2.5 rounded-lg font-bold text-sm neon-glow flex items-center justify-center gap-2 transition-all hover:bg-accent/90">
-                                                <span className="material-symbols-outlined text-lg">add</span>
-                                                Add to Watchlist
-                                            </button>
+                                            {(() => {
+                                                const mId = movie.movie_id || movie.id;
+                                                const inWatchlist = watchlistSet.has(mId);
+                                                return (
+                                                    <button
+                                                        onClick={() => {
+                                                            if (inWatchlist) {
+                                                                setToast({ message: `${movie.title} is already in your Watchlist.`, type: 'error' });
+                                                                return;
+                                                            }
+                                                            const success = addToWatchlist(mId);
+                                                            if (success) {
+                                                                setWatchlistSet(new Set(watchlistSet).add(mId));
+                                                                setToast({ message: `Added ${movie.title} to Watchlist!`, type: 'success' });
+                                                            }
+                                                        }}
+                                                        className={`mt-auto w-full py-2.5 rounded-lg font-bold text-sm tracking-wide flex items-center justify-center gap-2 transition-all duration-300 group/btn ${inWatchlist ? "bg-emerald-500/10 border border-emerald-500/50 text-emerald-400 cursor-pointer hover:bg-emerald-500/20 active:scale-95" : "bg-surface-dark border border-primary/20 text-slate-200 hover:bg-primary/20 hover:text-primary hover:border-primary hover:neon-glow hover:-translate-y-1 hover:shadow-[0_0_15px_rgba(13,227,242,0.4)] active:scale-95"}`}
+                                                    >
+                                                        {inWatchlist ? (
+                                                            <>
+                                                                <span className="material-symbols-outlined text-lg">check_circle</span>
+                                                                Saved
+                                                            </>
+                                                        ) : (
+                                                            <>
+                                                                <span className="material-symbols-outlined text-lg transition-transform duration-300 group-hover/btn:rotate-90 group-hover/btn:scale-110">add</span>
+                                                                Add to Watchlist
+                                                            </>
+                                                        )}
+                                                    </button>
+                                                )
+                                            })()}
                                         </div>
                                     </div>
                                 ))}
@@ -361,7 +462,7 @@ export default function Movies() {
                         {movies.length > 0 && hasMore && (
                             <div className="mt-16 flex flex-col items-center gap-6">
                                 <button
-                                    onClick={() => setLimit(prev => prev + 20)}
+                                    onClick={() => setPage(prev => prev + 1)}
                                     className="px-12 py-4 rounded-xl glass border border-primary/30 text-primary font-bold hover:bg-primary/20 hover:shadow-[0_0_20px_rgba(13,227,242,0.4)] hover:-translate-y-1 active:scale-95 transition-all duration-300 flex items-center gap-3 group"
                                 >
                                     Load More
@@ -374,8 +475,6 @@ export default function Movies() {
                         )}
                     </div>
                 </main>
-
-                <Footer />
             </div>
         </div>
     );

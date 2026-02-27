@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { Link } from 'react-router-dom';
 
 
 export default function Trendings() {
@@ -78,33 +79,35 @@ export default function Trendings() {
                 ) : (
                     movies.map((movie, idx) => (
                         <div key={idx} className="group relative min-w-[240px] flex-shrink-0 cursor-pointer md:min-w-[280px]">
-                            <div className="relative aspect-[2/3] overflow-hidden rounded-xl bg-surface-dark border border-white/5">
-                                <img
-                                    alt={`${movie.title} poster`}
-                                    className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
-                                    src={movie.poster_path?.startsWith('http') ? movie.poster_path : `${IMAGE_BASE_URL}${movie.poster_path}`}
-                                    onError={(e) => { e.target.src = 'https://via.placeholder.com/280x420/162a2d/0de3f2?text=No+Image' }}
-                                />
-                                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-80 transition-opacity group-hover:opacity-100"></div>
-                            </div>
-                            <div className="absolute bottom-0 p-4 w-full">
-                                <h3 className="text-lg font-bold text-white leading-tight mb-1 group-hover:text-primary transition-colors line-clamp-2" title={movie.title}>{movie.title}</h3>
-                                <div className="flex items-center gap-2 text-xs text-slate-300 flex-wrap">
-                                    <span>{movie.genres?.[0] || 'Movie'}</span>
-                                    {movie.release_date && (
-                                        <>
-                                            <span className="size-1 rounded-full bg-slate-500"></span>
-                                            <span>{new Date(movie.release_date).getFullYear() || movie.release_date.substring(0, 4)}</span>
-                                        </>
-                                    )}
-                                    {movie.language && (
-                                        <>
-                                            <span className="size-1 rounded-full bg-slate-500"></span>
-                                            <span className="uppercase">{movie.language}</span>
-                                        </>
-                                    )}
+                            <Link to={`/movie/${movie.movie_id || movie.id}`} className="block w-full h-full">
+                                <div className="relative aspect-[2/3] overflow-hidden rounded-xl bg-surface-dark border border-white/5">
+                                    <img
+                                        alt={`${movie.title} poster`}
+                                        className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
+                                        src={movie.poster_path?.startsWith('http') ? movie.poster_path : `${IMAGE_BASE_URL}${movie.poster_path}`}
+                                        onError={(e) => { e.target.src = 'https://via.placeholder.com/280x420/162a2d/0de3f2?text=No+Image' }}
+                                    />
+                                    <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-80 transition-opacity group-hover:opacity-100"></div>
                                 </div>
-                            </div>
+                                <div className="absolute bottom-0 p-4 w-full">
+                                    <h3 className="text-lg font-bold text-white leading-tight mb-1 group-hover:text-primary transition-colors line-clamp-2" title={movie.title}>{movie.title}</h3>
+                                    <div className="flex items-center gap-2 text-xs text-slate-300 flex-wrap">
+                                        <span>{movie.genres?.[0] || 'Movie'}</span>
+                                        {movie.release_date && (
+                                            <>
+                                                <span className="size-1 rounded-full bg-slate-500"></span>
+                                                <span>{new Date(movie.release_date).getFullYear() || movie.release_date.substring(0, 4)}</span>
+                                            </>
+                                        )}
+                                        {movie.language && (
+                                            <>
+                                                <span className="size-1 rounded-full bg-slate-500"></span>
+                                                <span className="uppercase">{movie.language}</span>
+                                            </>
+                                        )}
+                                    </div>
+                                </div>
+                            </Link>
                         </div>
                     )))}
             </div>
