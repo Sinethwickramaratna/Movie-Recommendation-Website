@@ -1,11 +1,14 @@
 import React from 'react';
+import { Link, useLocation } from 'react-router-dom';
 
 export default function Header() {
+    const location = useLocation();
+
     return (
         <header className="sticky top-0 z-50 w-full border-b border-white/10 bg-background-dark/70 backdrop-blur-xl">
             <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6 lg:px-8">
                 <div className="flex items-center gap-10">
-                    <a className="flex items-center gap-3 transition-opacity hover:opacity-90 group" href="#">
+                    <Link to="/" className="flex items-center gap-3 transition-opacity hover:opacity-90 group">
                         <div className="relative flex size-10 items-center justify-center rounded-full bg-gradient-to-tr from-primary/30 to-primary/10 text-primary ring-1 ring-primary/40">
                             <div className="absolute inset-0 rounded-full bg-primary/40 blur-md animate-pulse"></div>
                             <div className="absolute inset-0 rounded-full bg-primary/20 blur-xl animate-pulse delay-75"></div>
@@ -14,12 +17,12 @@ export default function Header() {
                         <h2 className="hidden text-xl font-bold tracking-tight text-white sm:block">
                             CineMatch<span className="text-primary">AI</span>
                         </h2>
-                    </a>
+                    </Link>
                     <nav className="hidden md:flex items-center gap-1 bg-white/5 px-2 py-1.5 rounded-full border border-white/5">
-                        <a className="px-4 py-1.5 text-sm font-semibold text-white bg-white/10 rounded-full shadow-sm transition-all" href="#">Home</a>
-                        <a className="px-4 py-1.5 text-sm font-medium text-slate-300 transition-colors hover:text-primary hover:bg-white/5 rounded-full" href="#">Movies</a>
-                        <a className="px-4 py-1.5 text-sm font-medium text-slate-300 transition-colors hover:text-primary hover:bg-white/5 rounded-full" href="#">Discover</a>
-                        <a className="px-4 py-1.5 text-sm font-medium text-slate-300 transition-colors hover:text-primary hover:bg-white/5 rounded-full" href="#">Watchlist</a>
+                        <Link to="/" className={`px-4 py-1.5 text-sm font-semibold rounded-full shadow-sm transition-all ${location.pathname === '/' ? 'text-white bg-white/10' : 'text-slate-300 hover:text-primary hover:bg-white/5'}`}>Home</Link>
+                        <Link to="/movies" className={`px-4 py-1.5 text-sm font-medium rounded-full shadow-sm transition-all ${location.pathname === '/movies' ? 'text-white bg-white/10' : 'text-slate-300 hover:text-primary hover:bg-white/5'}`}>Movies</Link>
+                        <Link to="/discover" className={`px-4 py-1.5 text-sm font-medium rounded-full shadow-sm transition-all ${location.pathname === '/discover' ? 'text-white bg-white/10' : 'text-slate-300 hover:text-primary hover:bg-white/5'}`}>Discover</Link>
+                        <Link to="/watchlist" className={`px-4 py-1.5 text-sm font-medium rounded-full shadow-sm transition-all ${location.pathname === '/watchlist' ? 'text-white bg-white/10' : 'text-slate-300 hover:text-primary hover:bg-white/5'}`}>Watchlist</Link>
                     </nav>
                 </div>
                 <div className="flex items-center gap-4">
