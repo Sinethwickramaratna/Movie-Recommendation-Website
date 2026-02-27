@@ -11,7 +11,7 @@ export default function Watchlist() {
     const [toast, setToast] = useState({ message: '', type: '' });
 
     const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
-    const IMAGE_BASE_URL = import.meta.env.VITE_TMDB_IMAGE_BASE_URL || 'https://image.tmdb.org/t/p/w500';
+    const IMAGE_BASE_URL = import.meta.env.VITE_TMDB_IMAGE_BASE_URL;
 
     const loadWatchlistData = async () => {
         setLoading(true);

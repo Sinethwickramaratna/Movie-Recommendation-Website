@@ -476,6 +476,7 @@ export default function Movies() {
                     </div>
                 </main>
             </div>
+            <Footer />
         </div>
     );
 }
