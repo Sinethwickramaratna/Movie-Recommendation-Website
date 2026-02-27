@@ -26,6 +26,7 @@ export default function Watchlist() {
 
             // Fetch metadata for all saved IDs concurrently
             const moviePromises = currentWatchlistIds.map(async (id) => {
+                if (!id) return null;
                 try {
                     const res = await fetch(`${API_BASE_URL}/movies/${id}`);
                     if (res.ok) {
@@ -111,7 +112,7 @@ export default function Watchlist() {
                                     <div className="relative w-full aspect-[2/3] rounded-xl overflow-hidden shadow-xl shadow-black/20 dark:shadow-black/50 transition-all duration-300 hover:shadow-2xl hover:-translate-y-1">
                                         <div
                                             className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
-                                            style={{ backgroundImage: `url(${movie.poster_path?.startsWith('http') ? movie.poster_path : `${IMAGE_BASE_URL}${movie.poster_path}`})` }}
+                                            style={{ backgroundImage: `url(${movie.poster_path ? (movie.poster_path.startsWith('http') ? movie.poster_path : `${IMAGE_BASE_URL}${movie.poster_path}`) : 'https://via.placeholder.com/280x420/162a2d/0de3f2?text=No+Image'})` }}
                                         ></div>
                                         <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center gap-3 backdrop-blur-sm p-4">
                                             <button
