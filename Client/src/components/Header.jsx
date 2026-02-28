@@ -9,6 +9,8 @@ export default function Header() {
     const [searchResults, setSearchResults] = useState([]);
     const [isSearching, setIsSearching] = useState(false);
     const [showDropdown, setShowDropdown] = useState(false);
+    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+    const [isMobileSearchOpen, setIsMobileSearchOpen] = useState(false);
     const searchRef = useRef(null);
 
     const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
@@ -180,14 +182,77 @@ export default function Header() {
                             </div>
                         )}
                     </div>
-                    <button className="flex lg:hidden items-center justify-center text-slate-300 hover:text-white">
-                        <span className="material-symbols-outlined">search</span>
+                    <button onClick={() => { setIsMobileSearchOpen(!isMobileSearchOpen); setIsMobileMenuOpen(false); }} className="flex lg:hidden h-10 w-10 items-center justify-center rounded-full text-slate-300 hover:text-white hover:bg-white/10 active:bg-white/20 transition-colors cursor-pointer">
+                        <span className="material-symbols-outlined text-2xl">search</span>
                     </button>
-                    <button className="ml-2 md:hidden text-white">
-                        <span className="material-symbols-outlined">menu</span>
+                    <button onClick={() => { setIsMobileMenuOpen(!isMobileMenuOpen); setIsMobileSearchOpen(false); }} className="md:hidden flex h-10 w-10 items-center justify-center rounded-full text-white hover:bg-white/10 active:bg-white/20 transition-colors ml-1 cursor-pointer">
+                        <span className="material-symbols-outlined text-2xl">{isMobileMenuOpen ? 'close' : 'menu'}</span>
                     </button>
                 </div>
             </div>
+
+            {/* Mobile Search Overlay */}
+            {isMobileSearchOpen && (
+                <div className="absolute top-full left-0 w-full bg-background-dark/95 backdrop-blur-xl p-4 border-b border-white/10 lg:hidden animate-fade-in text-white shadow-2xl z-50">
+                    <form
+                        className="relative flex items-center"
+                        onSubmit={(e) => {
+                            e.preventDefault();
+                            if (searchQuery.trim()) {
+                                setShowDropdown(false);
+                                setIsMobileSearchOpen(false);
+                                navigate(`/movies?search=${encodeURIComponent(searchQuery.trim())}`);
+                                setSearchQuery('');
+                            }
+                        }}
+                    >
+                        <button type="submit" className="absolute left-3 flex items-center justify-center text-slate-400 hover:text-primary p-2">
+                            <span className="material-symbols-outlined">search</span>
+                        </button>
+                        <input
+                            type="search"
+                            value={searchQuery}
+                            onChange={(e) => {
+                                setSearchQuery(e.target.value);
+                                setShowDropdown(true);
+                            }}
+                            className="w-full rounded-full border border-white/10 bg-surface-dark/50 py-3 pl-12 pr-12 text-base text-white placeholder-slate-500 backdrop-blur-sm focus:border-primary/50 focus:bg-surface-dark focus:outline-none focus:ring-1 focus:ring-primary/50"
+                            placeholder="Search movies ..."
+                            autoFocus
+                        />
+                        {searchQuery && (
+                            <button type="button" onClick={() => setSearchQuery('')} className="absolute right-3 text-slate-400 hover:text-white p-2 flex items-center justify-center">
+                                <span className="material-symbols-outlined text-sm">close</span>
+                            </button>
+                        )}
+                    </form>
+                    {/* Mobile Dropdown */}
+                    {showDropdown && searchResults.length > 0 && (
+                        <div className="mt-3 flex flex-col max-h-[60vh] overflow-y-auto w-full bg-surface-dark rounded-xl border border-white/10">
+                            {searchResults.map((movie) => (
+                                <Link key={movie.movie_id} to={`/movie/${movie.movie_id}`} onClick={() => { setShowDropdown(false); setIsMobileSearchOpen(false); setSearchQuery(''); }} className="flex items-center gap-3 p-3 border-b border-white/5 last:border-0 hover:bg-white/5">
+                                    <img src={movie.poster_path?.startsWith('http') ? movie.poster_path : `${IMAGE_BASE_URL}${movie.poster_path}`} className="w-10 h-14 object-cover rounded" onError={(e) => e.target.src = 'https://via.placeholder.com/40x56/162a2d/0de3f2'} alt="" />
+                                    <div className="flex flex-col">
+                                        <span className="text-sm font-medium">{movie.title}</span>
+                                        <span className="text-xs text-slate-400">{movie.release_date ? movie.release_date.split('-')[0] : ''}</span>
+                                    </div>
+                                </Link>
+                            ))}
+                            <Link to={`/movies?search=${encodeURIComponent(searchQuery)}`} onClick={() => { setShowDropdown(false); setIsMobileSearchOpen(false); setSearchQuery(''); }} className="p-3 text-center text-primary text-sm font-bold bg-white/5">View all results</Link>
+                        </div>
+                    )}
+                </div>
+            )}
+
+            {/* Mobile Menu Overlay */}
+            {isMobileMenuOpen && (
+                <div className="absolute top-full left-0 w-full bg-background-dark/95 backdrop-blur-xl border-b border-white/10 md:hidden animate-fade-in text-white p-4 flex flex-col gap-2 shadow-2xl z-50">
+                    <Link to="/" onClick={() => setIsMobileMenuOpen(false)} className={`px-4 py-3 rounded-lg font-medium transition-colors ${location.pathname === '/' ? 'bg-primary/10 text-primary' : 'hover:bg-white/5'}`}>Home</Link>
+                    <Link to="/movies" onClick={() => setIsMobileMenuOpen(false)} className={`px-4 py-3 rounded-lg font-medium transition-colors ${location.pathname === '/movies' ? 'bg-primary/10 text-primary' : 'hover:bg-white/5'}`}>Movies</Link>
+                    <Link to="/discover" onClick={() => setIsMobileMenuOpen(false)} className={`px-4 py-3 rounded-lg font-medium transition-colors ${location.pathname === '/discover' ? 'bg-primary/10 text-primary' : 'hover:bg-white/5'}`}>Discover</Link>
+                    <Link to="/watchlist" onClick={() => setIsMobileMenuOpen(false)} className={`px-4 py-3 rounded-lg font-medium transition-colors ${location.pathname === '/watchlist' ? 'bg-primary/10 text-primary' : 'hover:bg-white/5'}`}>Watchlist</Link>
+                </div>
+            )}
         </header>
     );
 }

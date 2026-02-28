@@ -39,7 +39,7 @@ export default function HowItWorks() {
                                 desired release years, max runtime, preferred languages, and minimum ratings. You hold the controls.
                             </p>
                         </div>
-                        <div className="absolute left-1/2 -translate-x-1/2 flex items-center justify-center w-12 h-12 rounded-full bg-background-dark border-4 border-primary z-10">
+                        <div className="relative mb-6 md:mb-0 md:absolute left-1/2 -translate-x-1/2 flex items-center justify-center w-12 h-12 rounded-full bg-background-dark border-4 border-primary z-10">
                             <span className="text-primary font-bold">1</span>
                         </div>
                         <div className="md:w-5/12 bg-surface-dark/50 border border-white/5 p-6 rounded-2xl md:pl-10">
@@ -63,7 +63,7 @@ export default function HowItWorks() {
                                 analyzing ratings, genres, preferred runtime, and whether a movie is considered average or not, to find the perfect matches.
                             </p>
                         </div>
-                        <div className="absolute left-1/2 -translate-x-1/2 flex items-center justify-center w-12 h-12 rounded-full bg-background-dark border-4 border-purple-500 z-10">
+                        <div className="relative mb-6 md:mb-0 md:absolute left-1/2 -translate-x-1/2 flex items-center justify-center w-12 h-12 rounded-full bg-background-dark border-4 border-purple-500 z-10">
                             <span className="text-purple-400 font-bold">2</span>
                         </div>
                         <div className="md:w-5/12 bg-surface-dark/50 border border-white/5 p-6 rounded-2xl md:pr-10">
@@ -85,7 +85,7 @@ export default function HowItWorks() {
                                 Add them to your watchlist, view deep insights, or hit play. The power of discovery is yours.
                             </p>
                         </div>
-                        <div className="absolute left-1/2 -translate-x-1/2 flex items-center justify-center w-12 h-12 rounded-full bg-background-dark border-4 border-accent-magenta z-10">
+                        <div className="relative mb-6 md:mb-0 md:absolute left-1/2 -translate-x-1/2 flex items-center justify-center w-12 h-12 rounded-full bg-background-dark border-4 border-accent-magenta z-10">
                             <span className="text-accent-magenta font-bold">3</span>
                         </div>
                         <div className="md:w-5/12 bg-surface-dark/50 border border-white/5 p-6 rounded-2xl md:pl-10">

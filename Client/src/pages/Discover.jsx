@@ -268,7 +268,7 @@ export default function Discover() {
                             </div>
                         </div>
 
-                        <div className="lg:col-span-4 flex flex-col gap-6 border-l border-white/5 lg:pl-10">
+                        <div className="lg:col-span-4 flex flex-col gap-6 border-t lg:border-t-0 lg:border-l border-white/5 pt-8 lg:pt-0 lg:pl-10">
 
                             {/* Min Rating */}
                             <div>
