@@ -173,7 +173,7 @@ export default function Discover() {
             <Toast message={toast.message} type={toast.type} onClose={() => setToast({ message: '', type: '' })} />
             <Header />
 
-            <main className="flex-1 w-full max-w-7xl mx-auto px-6 py-10">
+            <main className="flex-1 w-full max-w-7xl mx-auto px-4 sm:px-6 py-8 sm:py-10">
                 <div className="flex flex-col items-center text-center mb-12 space-y-4 animate-fade-in-up">
                     <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 mb-2">
                         <span className="material-symbols-outlined text-primary text-sm">auto_awesome</span>
@@ -187,7 +187,7 @@ export default function Discover() {
                     </p>
                 </div>
 
-                <div className="glass-card rounded-2xl p-8 mb-16 shadow-2xl relative overflow-hidden animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
+                <div className="glass-card rounded-2xl p-5 sm:p-8 mb-16 shadow-2xl relative overflow-hidden animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
                     <div className="absolute -top-24 -right-24 w-64 h-64 bg-primary/10 rounded-full blur-3xl pointer-events-none"></div>
                     <div className="absolute -bottom-24 -left-24 w-64 h-64 bg-accent-magenta/10 rounded-full blur-3xl pointer-events-none"></div>
 
@@ -223,7 +223,7 @@ export default function Discover() {
 
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                                 {/* Release Year */}
-                                <div className="bg-surface-dark/30 rounded-xl p-5 border border-white/5">
+                                <div className="bg-surface-dark/30 rounded-xl p-4 sm:p-5 border border-white/5">
                                     <div className="flex justify-between items-end mb-4">
                                         <label className="text-slate-300 text-sm font-medium">Release Year</label>
                                         <span className="text-primary font-bold font-mono">{releaseYear}</span>
@@ -245,7 +245,7 @@ export default function Discover() {
                                 </div>
 
                                 {/* Runtime */}
-                                <div className="bg-surface-dark/30 rounded-xl p-5 border border-white/5">
+                                <div className="bg-surface-dark/30 rounded-xl p-4 sm:p-5 border border-white/5">
                                     <div className="flex justify-between items-end mb-4">
                                         <label className="text-slate-300 text-sm font-medium">Max Runtime (min)</label>
                                         <span className="text-primary font-bold font-mono">{runtimeRange}</span>

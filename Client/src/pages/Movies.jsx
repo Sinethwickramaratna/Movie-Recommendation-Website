@@ -178,12 +178,12 @@ export default function Movies() {
 
                 <main className="flex-grow">
                     {/* Hero Section */}
-                    <header className="max-w-7xl mx-auto px-6 pt-12 pb-8">
-                        <div className="relative p-8 rounded-xl bg-gradient-to-br from-primary/10 to-transparent border border-primary/5 overflow-hidden">
+                    <header className="max-w-7xl mx-auto px-4 sm:px-6 pt-12 pb-8">
+                        <div className="relative p-5 sm:p-8 rounded-xl bg-gradient-to-br from-primary/10 to-transparent border border-primary/5 overflow-hidden">
                             <div className="absolute -right-20 -top-20 w-64 h-64 bg-primary/20 blur-[100px] rounded-full"></div>
                             <div className="absolute -left-20 -bottom-20 w-64 h-64 bg-accent/10 blur-[100px] rounded-full"></div>
                             <div className="relative z-10">
-                                <h2 className="text-5xl font-black mb-4 tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-slate-100 to-primary">
+                                <h2 className="text-4xl sm:text-5xl font-black mb-4 tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-slate-100 to-primary">
                                     {searchQuery ? `Search Results: "${searchQuery}"` : 'New Releases'}
                                 </h2>
                                 <p className="text-lg text-primary/70 max-w-2xl">
@@ -197,8 +197,8 @@ export default function Movies() {
                     </header>
 
                     {/* Filters Section */}
-                    <section className="max-w-7xl mx-auto px-6 mb-8">
-                        <div className="glass rounded-xl p-6 border border-primary/20">
+                    <section className="max-w-7xl mx-auto px-4 sm:px-6 mb-8">
+                        <div className="glass rounded-xl p-4 sm:p-6 border border-primary/20">
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-end lg:grid-cols-5">
                                 {/* Genre Filter */}
                                 <div className="flex flex-col gap-2">
@@ -365,7 +365,7 @@ export default function Movies() {
                     </section>
 
                     {/* Movie Grid */}
-                    <div className="max-w-7xl mx-auto px-6 py-8">
+                    <div className="max-w-7xl mx-auto px-4 sm:px-6 py-8">
                         {loadingMovies ? (
                             <div className="flex w-full items-center justify-center p-20 text-slate-400">
                                 <span className="material-symbols-outlined animate-spin mr-3 text-3xl">progress_activity</span>

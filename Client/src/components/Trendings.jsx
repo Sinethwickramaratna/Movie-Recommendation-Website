@@ -41,9 +41,9 @@ export default function Trendings() {
     };
 
     return (
-        <section className="relative z-10 -mt-10 px-6 pb-12 md:px-10">
+        <section className="relative z-10 -mt-10 px-4 sm:px-6 pb-12 md:px-10">
             <div className="mb-6 flex items-center justify-between">
-                <h2 className="text-2xl font-bold tracking-tight text-white md:text-3xl flex items-center gap-3">
+                <h2 className="text-xl sm:text-2xl font-bold tracking-tight text-white md:text-3xl flex items-center gap-2 sm:gap-3">
                     <span className="h-8 w-1.5 rounded-full bg-primary"></span>
                     Trending Now
                 </h2>

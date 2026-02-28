@@ -79,11 +79,11 @@ export default function Watchlist() {
             <div className="relative flex min-h-screen w-full flex-col overflow-x-hidden">
                 <Header />
 
-                <main className="flex-1 w-full max-w-7xl mx-auto px-4 md:px-10 py-8">
+                <main className="flex-1 w-full max-w-7xl mx-auto px-4 sm:px-6 md:px-10 py-6 sm:py-8">
                     <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-8">
                         <div className="flex flex-col gap-2">
-                            <h1 className="text-4xl md:text-5xl font-black tracking-tight text-slate-900 dark:text-white">My Watchlist</h1>
-                            <p className="text-slate-500 dark:text-slate-400 text-lg max-w-2xl">Your personalized queue of cinematic adventures awaiting discovery.</p>
+                            <h1 className="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight text-slate-900 dark:text-white">My Watchlist</h1>
+                            <p className="text-slate-500 dark:text-slate-400 text-base sm:text-lg max-w-2xl">Your personalized queue of cinematic adventures awaiting discovery.</p>
                         </div>
                         <div className="flex gap-2 overflow-x-auto pb-2 md:pb-0 no-scrollbar">
                             <button className="flex h-9 shrink-0 items-center justify-center px-4 rounded-xl bg-primary text-background-dark font-bold text-sm shadow-lg shadow-primary/25 transition-transform hover:scale-105">

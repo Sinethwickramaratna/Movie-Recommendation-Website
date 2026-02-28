@@ -22,11 +22,11 @@ export default function HeroSection() {
                         <span className="material-symbols-outlined text-sm text-primary">auto_awesome</span>
                         <span className="text-xs font-semibold uppercase tracking-wider text-primary">AI-Powered Discovery</span>
                     </div>
-                    <h1 className="text-5xl font-black leading-tight tracking-tight text-white md:text-7xl lg:text-[5rem] animate-slide-in-right">
+                    <h1 className="text-4xl sm:text-5xl font-black leading-tight tracking-tight text-white md:text-7xl lg:text-[5rem] animate-slide-in-right">
                         Discover Movies <br className="hidden md:block" />
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-blue-500">You'll Love</span>
                     </h1>
-                    <p className="max-w-2xl text-lg text-slate-300 md:text-xl animate-fade-in" style={{ animationDelay: '0.2s' }}>
+                    <p className="max-w-2xl text-base sm:text-lg text-slate-300 md:text-xl animate-fade-in" style={{ animationDelay: '0.2s' }}>
                         Stop scrolling, start watching. Our advanced AI analyzes your unique taste to recommend hidden gems and blockbusters tailored just for you.
                     </p>
                     <div className="mt-4 flex w-full flex-col gap-4 sm:flex-row sm:justify-center animate-fade-in-up" style={{ animationDelay: '0.4s' }}>

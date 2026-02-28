@@ -41,10 +41,10 @@ export default function NewReleases() {
     }, []);
 
     return (
-        <section className="px-6 pb-20 md:px-10 bg-surface-dark/30 pt-12">
+        <section className="px-4 sm:px-6 pb-20 md:px-10 bg-surface-dark/30 pt-12">
             <Toast message={toast.message} type={toast.type} onClose={() => setToast({ message: '', type: '' })} />
             <div className="flex items-center justify-between mb-8">
-                <h2 className="text-2xl font-bold tracking-tight text-white md:text-3xl flex items-center gap-3">
+                <h2 className="text-xl sm:text-2xl font-bold tracking-tight text-white md:text-3xl flex items-center gap-2 sm:gap-3">
                     <span className="h-8 w-1.5 rounded-full bg-secondary"></span>
                     New Releases
                 </h2>
