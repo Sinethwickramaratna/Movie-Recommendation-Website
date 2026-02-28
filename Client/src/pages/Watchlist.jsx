@@ -114,21 +114,21 @@ export default function Watchlist() {
                                             className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
                                             style={{ backgroundImage: `url(${movie.poster_path ? (movie.poster_path.startsWith('http') ? movie.poster_path : `${IMAGE_BASE_URL}${movie.poster_path}`) : 'https://via.placeholder.com/280x420/162a2d/0de3f2?text=No+Image'})` }}
                                         ></div>
-                                        <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center gap-3 backdrop-blur-sm p-4">
+                                        <div className="absolute inset-0 bg-black/60 opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center gap-3 backdrop-blur-sm p-4">
                                             <button
                                                 onClick={(e) => {
                                                     e.preventDefault();
                                                     e.stopPropagation();
                                                     handleRemove(movie.movie_id || movie.id, movie.title);
                                                 }}
-                                                className="flex items-center gap-2 px-4 py-2 rounded-lg bg-red-500/20 hover:bg-red-500/40 text-red-400 border border-red-500/50 backdrop-blur-md transition-all duration-200 shadow-[0_0_15px_rgba(239,68,68,0.3)] hover:shadow-[0_0_20px_rgba(239,68,68,0.5)]"
+                                                className="flex items-center gap-2 px-4 py-2 rounded-lg bg-red-500/80 lg:bg-red-500/20 hover:bg-red-500/40 text-white lg:text-red-400 border border-red-500/50 backdrop-blur-md transition-all duration-200 shadow-[0_0_15px_rgba(239,68,68,0.3)] hover:shadow-[0_0_20px_rgba(239,68,68,0.5)] cursor-pointer z-10"
                                             >
                                                 <span className="material-symbols-outlined text-sm">delete</span>
                                                 <span className="text-xs font-bold uppercase tracking-wider">Remove</span>
                                             </button>
                                             <Link
                                                 to={`/movie/${movie.movie_id || movie.id}`}
-                                                className="size-10 rounded-full bg-primary text-background-dark flex items-center justify-center hover:scale-110 transition-transform"
+                                                className="size-10 rounded-full bg-primary text-background-dark flex items-center justify-center hover:scale-110 transition-transform cursor-pointer z-10 mt-auto mb-2"
                                             >
                                                 <span className="material-symbols-outlined">play_arrow</span>
                                             </Link>
